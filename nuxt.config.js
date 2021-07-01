@@ -141,7 +141,7 @@ export default {
                     {
                       icon: 'far fa-eye',
                       title: 'Envision',
-                      subtitle: 'Share a unique vision of the innovationn project',
+                      subtitle: 'Share a unique vision of the innovation project',
                       body: 'Through scoping and strategic alignement, generate a common vision of the innovation project and ensure full alignment among stakeholders on objectives, communication and constraints of the project.'
                     },
                     {
@@ -175,10 +175,10 @@ export default {
                   items: [
                     {
                       title: 'Quick and easy innovation project visualisation',
-                      body: 'The Innov&Scale 2.0 dashboard provides a quick and easy way to visualize the innovation project situation as you move forward and use the Innov&Scale method.<br/><br/>These graphs, in addition to accompanying the organization towards the realization of the innovation project, also serves as progress management tool. Indeed, for each of the five steps, the tool determines the completion rate and time management of the project.'
+                      body: 'The Innov&Scale 2.0 dashboard provides you with quick and easy way to visualize the innovation project situation as you move forward and use the Innov&Scale method.<br/><br/>These graphs, in addition to accompanying the organization towards the realization of the innovation project, also serve as progress management tool. Indeed, for each of the five steps, the tool determines the completion rate and time management of the project.'
                     },
                     {
-                      title: 'Every step of the 5-steps method is detailled',
+                      title: 'Every step of the 5-steps method is detailed',
                       body: 'Each sub-steps has its own completeness rate and time management detailed.<br/><br/>The completeness rate corresponds to the organization\'s real time progress toward the complete achievement of the steps and its objectives.<br/><br/>The time management graph corresponds to the respect of the forecasted deadlines indicated for each sub-step'
                     },
                     {
@@ -187,7 +187,7 @@ export default {
                     },
                     {
                       title: 'Quick and easy update of each tool',
-                      body: 'To-do pre work and deliverables are quickly and easily updated through a questionnaire.'
+                      body: 'To-do pre-work and deliverables are quickly and easily updated through a questionnaire.'
                     }
                   ]
                 },
@@ -229,7 +229,7 @@ export default {
                   items: [
                     {
                       title: 'Envision',
-                      body: 'The value of FACOM brand is quality... and quality means lifetime guarantee.<br/><br/>Everything begins with an idea but everyone had its own idea of what the new lifetime guarantee could be. <br/><br/>Through scoping and strategic alignment, a unique and shared vision has been created.Stakeholders have defined together unique objectives, clear communication, creators and users of the solution which will remain valid until the end of implementation. '
+                      body: 'The value of FACOM brand is quality... and quality means lifetime guarantee.<br/><br/>Everything begins with an idea but everyone had its own idea of what the new lifetime guarantee could be. <br/><br/>Through scoping and strategic alignment, a unique and shared vision has been created. Stakeholders have defined together unique objectives, clear communication, creators and users of the solution which will remain valid until the end of implementation. '
                     },
                     {
                       title: 'Co-Create',
@@ -250,7 +250,7 @@ export default {
                   ],
                   testimony: {
                     title: 'Yves Antier, VP and GM Tool & Storage France, FACOM Black & Decker testimony',
-                    body: '"We had identified an idea to digitize one of FACOM\'s core brand values, and everyone came up with a solution.<br/>The Innov&Scale methhod did two things that we would have been unable to do alone:<br/><ul><li>Share a unique vision of the project<li>Co-create the solution with end-users and our distribution partners</ul>These two elements were fundamental to the success of this project.<br/><br/>The speed of execution in the preparation of the full-scale test and the rapid successive improvements in contact with a start up state of mind are often incompatible with the matrix mode of operation of large groups.<br/><br/>Finally, the stumbling block is often the industrialization because it is necessary to put larger amounts of investment on the table, which calls upon a multitude of internal functions. Only the preparation of a structured business case allows the project to be brought to term.<br/>In fact, each of the steps must be carried out in order with rigor and perseverance. The Innov&Scale method allows you to successfully carry out this project from start to finish.<br/><br/>I think that the method provided the collective confidence to carry out the project, each step being structuring, with an external project manager who makes us move forward more quickly.<br/><br/>Thanks to this method, the brand has been enhanced with end-users, our distribution partners and internally. This project could snowball into other brands and other countries in the group."'
+                    body: '"We had identified an idea to digitize one of FACOM\'s core brand values, and everyone came up with a solution.<br/>The Innov&Scale method did two things that we would have been unable to do alone:<br/><ul><li>Share a unique vision of the project<li>Co-create the solution with end-users and our distribution partners</ul>These two elements were fundamental to the success of this project.<br/><br/>The speed of execution in the preparation of the full-scale test and the rapid successive improvements in contact with a start up state of mind are often incompatible with the matrix mode of operation of large groups.<br/><br/>Finally, the stumbling block is often the industrialization because it is necessary to put larger amounts of investment on the table, which calls upon a multitude of internal functions. Only the preparation of a structured business case allows the project to be brought to term.<br/>In fact, each of the steps must be carried out in order with rigor and perseverance. The Innov&Scale method allows you to successfully carry out this project from start to finish.<br/><br/>I think that the method provided the collective confidence to carry out the project, each step being structuring, with an external project manager who makes us move forward more quickly.<br/><br/>Thanks to this method, the brand has been enhanced with end-users, our distribution partners and internally. This project could snowball into other brands and other countries in the group."'
                   }
                 },
                 services: {
@@ -276,11 +276,11 @@ export default {
                   pricings: [
                     {
                       title: 'Mid size company',
-                      body: 'From 1 to 50 project/user<br/><br/>Access to the platform<br/><br/>Evolutionary maintenance<br/><br/>4 days of initial training<br/><br/>2 days of annual coaching'
+                      body: 'From 1 to 50 project(s)/user(s)<br/><br/>Access to the platform<br/><br/>Evolutionary maintenance<br/><br/>4 days of initial training<br/><br/>2 days of annual coaching'
                     },
                     {
                       title: 'Enterprise',
-                      body: 'From 1 to 500 project/user<br/><br/>Access to the platform<br/><br/>Evolutionary maintenance<br/><br/>5 days of initial training<br/><br/>3 days of annual coaching'
+                      body: 'From 1 to 500 project(s)/user(s)<br/><br/>Access to the platform<br/><br/>Evolutionary maintenance<br/><br/>5 days of initial training<br/><br/>3 days of annual coaching'
                     }
                   ]
                 },
@@ -367,13 +367,13 @@ export default {
                     },
                     {
                       title: 'Contrôle ',
-                      body: 'Maitrisez l\'ensemble des tâches à accomplir pour réealiser et industrialiser votre innovation.'
+                      body: 'Maitrisez l\'ensemble des tâches à accomplir pour réaliser et industrialiser votre innovation.'
                     }
                   ]
                 },
                 method: {
                   title: 'La méthode Innov&Scale',
-                  body: 'Les 5 étapes de la méthode Innov&Scale guident le projet de transformation digital vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable pour préparer l\'étape, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
+                  body: 'Les 5 étapes de la méthode Innov&Scale guident le projet de transformation digitale vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
                   items: [
                     {
                       icon: 'far fa-eye',
@@ -474,7 +474,7 @@ export default {
                     },
                     {
                       title: 'Préparer',
-                      body: 'Le développement de la solution et le dossier pilote ont été réalisés en même tempstime. <br/><br/>Grâce à une méthode de travail agile, FACOM a pu développer en deux mois seulement une application digitale prête à être lancée. <br/><br/>Dans le même temps, un dossier pilote, réunissant les éléments principaux de la solution à tester, a été créé.'
+                      body: 'Le développement de la solution et le dossier pilote ont été réalisés en même temps. <br/><br/>Grâce à une méthode de travail agile, FACOM a pu développer en deux mois seulement une application digitale prête à être lancée. <br/><br/>Dans le même temps, un dossier pilote, réunissant les éléments principaux de la solution à tester, a été créé.'
                     },
                     {
                       title: 'Affiner',
@@ -482,12 +482,12 @@ export default {
                     },
                     {
                       title: 'Industrialiser',
-                      body: 'Une méthode efficace de gestion du changement a été utilisée pour faire évoluer avec succès le nouveau processus et outil de garantie à vie FACOM, de 200 à plus de 10 000 clients.<br/><br/>Anticiper l\'après-projet pour en faire une activité principale à l\'entreprise.'
+                      body: 'Une méthode efficace de gestion du changement a été utilisée pour faire évoluer avec succès le nouveau processus et l\'outil de garantie à vie FACOM, de 200 à plus de 10 000 clients.<br/><br/>Anticiper l\'après-projet pour en faire une activité principale à l\'entreprise.'
                     }
                   ],
                   testimony: {
                     title: 'Témoignage d\'Yves Antier, Vice Président et Directeur Général de FACOM, groupe Stanley Black&Decker',
-                    body: '" Nous avions identifié une idée de digitalisation d\'une des valeurs pilier de la marque Facom, et chacun y allait de sa solution.<br/>La Méthode a fait deux choses que nous aurions été incapables de faire seuls:<br/><ul><li>Partager une vision unique du projet<li>Co-créer la solution avec des utilisateurs finaux et nos partenaires distributeurs</ul>Ces deux éléments ont été fondateurs dans le succès de ce projet.<br/><br/>La vitesse d\'exécution dans la préparation du test grandeur nature et les améliorations successives rapides au contact d\'un esprit Start Up, sont souvent incompatibles avec le mode de fonctionnement en Matrice des grands groupes.<br/><br/>Enfin le point d\'achoppement est souvent l\'industrialisation car il faut mettre des montants d\'investissement plus importants sur la table ce qui fait appel à une multitudes de fonctions internes, seule la préparation du business case structuré permet d\'emmener le projet à terme.<br/>En fait chacune des étapes doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale permet de mener ce projet de bout en bout avec succès.<br/><br/>Je pense que la méthode Innov&Scale a apporté la confiance collective pour mener à bien le projet, chaque étape étant structurante, avec un chef de projet extérieur qui nous fait avancer plus vite.<br/><br/>Grâce à cette méthode, la marque a été valorisée auprès des utilisateurs finaux, de nos partenaires de distribution et en interne. Ce projet pourrait faire boule de neige pour d\'autres marques et d\'autres pays du groupe."'
+                    body: '" Nous avions identifié une idée de digitalisation d\'une des valeurs piliers de la marque Facom, et chacun y allait de sa solution.<br/>La Méthode a fait deux choses que nous aurions été incapables de faire seuls:<br/><ul><li>Partager une vision unique du projet<li>Co-créer la solution avec des utilisateurs finaux et nos partenaires distributeurs</ul>Ces deux éléments ont été fondateurs dans le succès de ce projet.<br/><br/>La vitesse d\'exécution dans la préparation du test grandeur nature et les améliorations successives rapides au contact d\'un esprit Start Up, sont souvent incompatibles avec le mode de fonctionnement en Matrice des grands groupes.<br/><br/>Enfin le point d\'achoppement est souvent l\'industrialisation car il faut mettre des montants d\'investissement plus importants sur la table ce qui fait appel à une multitudes de fonctions internes, seule la préparation du business case structuré permet d\'emmener le projet à terme.<br/>En fait chacune des étapes doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale permet de mener ce projet de bout en bout avec succès.<br/><br/>Je pense que la méthode Innov&Scale a apporté la confiance collective pour mener à bien le projet, chaque étape étant structurante, avec un chef de projet extérieur qui nous fait avancer plus vite.<br/><br/>Grâce à cette méthode, la marque a été valorisée auprès des utilisateurs finaux, de nos partenaires de distribution et en interne. Ce projet pourrait faire boule de neige pour d\'autres marques et d\'autres pays du groupe."'
                   }
                 },
                 services: {
@@ -501,7 +501,7 @@ export default {
                     },
                     {
                       title: 'Formation ',
-                      body: 'Pour une appropriation rapide de la méthode, nous proposons des modules de formations à partir de cas pratiques afin d\'assurer un haut niveau de compétence.',
+                      body: 'Pour une appropriation rapide de la méthode, nous proposons des modules de formation à partir de cas pratiques afin d\'assurer un haut niveau de compétence.',
                       icon: 'far fa-play-circle'
                     },
                     {
@@ -513,11 +513,11 @@ export default {
                   pricings: [
                     {
                       title: 'Business',
-                      body: 'De 1 à 50 projet/utilisateur<br/><br/>Accès à la plateforme<br/><br/>Maintenance évolutive<br/><br/>4 jours de formation initiale<br/><br/>2 jours de coaching annuel'
+                      body: 'De 1 à 50 projet(s)/utilisateur(s)<br/><br/>Accès à la plateforme<br/><br/>Maintenance évolutive<br/><br/>4 jours de formation initiale<br/><br/>2 jours de coaching annuel'
                     },
                     {
                       title: 'Entreprise',
-                      body: 'De 1 to 500 projet/utilisateur<br/><br/>Accès à la plateforme<br/><br/>Maintenance évolutive<br/><br/>5 jours de formation initiale<br/><br/>3 jours de coaching annuel'
+                      body: 'De 1 to 500 projet(s)/utilisateur(s)<br/><br/>Accès à la plateforme<br/><br/>Maintenance évolutive<br/><br/>5 jours de formation initiale<br/><br/>3 jours de coaching annuel'
                     }
                   ]
                 },
