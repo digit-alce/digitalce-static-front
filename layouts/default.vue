@@ -86,7 +86,7 @@ img {
 
 .button--blue {
   border: 1px solid #526488;
-  background-color: #35495e;
+  background-color: #071BE1;
   color: #fff;
 }
 
@@ -107,7 +107,8 @@ img {
 }
 
 .underline:after {
-  border-bottom: 6px solid #b8c5e5;
+  border-bottom: 6px solid #071BE1;
+  opacity: 0.5;
   content:"";
   margin: 0 auto;
   position: absolute;

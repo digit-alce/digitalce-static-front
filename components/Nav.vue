@@ -3,7 +3,7 @@
     <NuxtLink class="link img" :to="localePath('/')">
       <div id="nav-logo">
         <span class="helper" />
-        <img src="@/assets/img/logo.png">
+        <img src="@/assets/img/digitalce-logo-cropped.png">
       </div>
     </NuxtLink>
 
@@ -103,8 +103,8 @@ export default Vue.extend({
  }
 
 #nav-logo img {
-  margin-left: 10px;
-  height: 50px;
+  margin-left: 30px;
+  height: 30px;
   vertical-align: middle;
 }
 
