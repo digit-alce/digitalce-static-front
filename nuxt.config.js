@@ -93,7 +93,7 @@ export default {
                     tool: {
                       title: 'A unique digital tool to ensure and share completion and time management of the innovation project',
                       subtitle: 'Innov&Scale 2.0',
-                      body: 'INNOV&SCALE 2.0 allows you to carry out the digital transformation in real time using the method'
+                      body: 'Innov&Scale 2.0 allows you to carry out the digital transformation in real time using the method'
                     },
                     'use-case': {
                       title: 'Use cases',
@@ -224,7 +224,7 @@ export default {
                 },
                 'use-case-facom': {
                   title: 'Use Case FACOM',
-                  'subtitle-big': 'FACOM LIFETIME GUARANTEE: SIMPLER, FASTER AND GREENER',
+                  'subtitle-big': 'Facom Lifetime Guarantee: Simpler, Faster And Greener',
                   'subtitle-small': 'How did we reshape lifetime guarantee with Innov&Scale?',
                   items: [
                     {

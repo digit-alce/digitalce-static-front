@@ -14,22 +14,27 @@
 <style>
 @font-face {
   font-family: MainFont;
-  src: url(../assets/fonts/Vera-Humana-95.ttf.eot); /* IE9 Compat Modes */
-  src: url(../assets/fonts/Vera-Humana-95.ttf.woff) format('woff'),
-       url(../assets/fonts/Vera-Humana-95.ttf.svg) format('svg');
+  src: url(../assets/fonts/LibreFranklin.ttf);
 }
 @font-face {
   font-family: SecondaryFont;
-  src: url(../assets/fonts/Mate.ttf);
+  src: url(../assets/fonts/Nanum-Regular.ttf);
 }
 
 html, body, #__nuxt, #__layout {
   height: 100%;
-  font-family: SecondaryFont;
-  font-size: 18px;
+  font-family: MainFont;
+  font-size: 12px;
   color: #2D3F65;
-  background-color: #F1F3F8;
+  background-color: #FFF;
 }
+
+.title, .subtitle {
+  font-family: SecondaryFont;
+  font-weight: 100;
+  letter-spacing: 0px;
+}
+
 
 *{
   margin: 0;
@@ -38,12 +43,11 @@ html, body, #__nuxt, #__layout {
 img {
   object-fit: cover;
   transform: translateZ(0);
-  /* width: 100%; */
 }
 
 #wrapper {
   min-height: calc(100vh - 75px);
-  padding-top: 75px;
+  padding-top: 119px;
   display: flex;
   flex-direction: column;
 }
@@ -60,43 +64,41 @@ img {
 
 .page-title, .page-subtitle {
   text-align: center;
-  font-family: MainFont;
   font-weight: 300;
   margin-bottom: 50px;
 }
 
-.page-title {
-  text-transform: uppercase;
+button {
+  border: 0;
+}
+
+button, .button {
+  cursor: pointer;
 }
 
 .button {
   margin: 0 auto;
-  border-radius: 4px;
   text-decoration: none;
   padding: 20px 10px;
-  text-transform: uppercase;
   text-align: center;
   width: 220px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px !important;
-  font-family: MainFont;
 }
 
 .button--blue {
-  border: 1px solid #526488;
   background-color: #071BE1;
   color: #fff;
 }
 
 .button--blue:hover {
-  background-color: #fff;
-  color: #35495e;
+  opacity: 0.7;
+  transition: all 300ms ease-out;
 }
 
 .text-item-title {
-  text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 10px;
   display: inline-block;
@@ -120,20 +122,21 @@ img {
   padding: 10px 20px;
 }
 
+.no-border {
+  border: none !important;
+}
+
 @media screen and (max-width: 9000px) {
   .page-title {
     font-size: 40px;
-    letter-spacing: 3px;
   }
 
   .page-subtitle-big {
     font-size: 26px;
-    letter-spacing: 1.5px;
   }
 
   .page-subtitle-small {
     font-size: 24px;
-    letter-spacing: 1.2px;
   }
 
   .column-1 {
@@ -156,17 +159,14 @@ img {
 @media screen and (max-width: 900px) {
   .page-title {
     font-size: 32px;
-    letter-spacing: -0.2px;
   }
 
   .page-subtitle-big {
     font-size: 25px;
-    letter-spacing: 1px;
   }
 
   .page-subtitle-small {
     font-size: 20px;
-    letter-spacing: 1px;
   }
 
   .column-1 {

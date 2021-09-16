@@ -2,7 +2,7 @@
   <div id="footer">
     <div id="left-footer-links">
       <ul>
-        <li>
+        <li class="title">
           DIGIT ALCE<br/>France
         </li>
       </ul>
@@ -46,13 +46,12 @@ export default Vue.extend({})
 
 <style scoped>
 #footer {
-  background: white;
   width:100%;
   font-size: 14px;
   box-shadow: 0px 0px 5px gray;
   padding-top: 19px;
   color: #2D3F65;
-  background-color: #F1F3F8;
+  background-color: #EFEFEE;
   padding-bottom: 1rem;
 }
 
@@ -83,7 +82,6 @@ ul{
 
 li {
   margin: 0 0 20px 0;
-  letter-spacing: 0.9px;
 }
 
 </style>

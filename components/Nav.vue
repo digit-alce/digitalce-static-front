@@ -3,17 +3,21 @@
     <NuxtLink class="link img" :to="localePath('/')">
       <div id="nav-logo">
         <span class="helper" />
-        <img src="@/assets/img/digitalce-logo-cropped.png">
+        <img src="@/assets/img/digitalce_logobaseline_bleu.png">
       </div>
     </NuxtLink>
 
     <div id="nav-links">
-      <NuxtLink class="link" :to="localePath('/benefits')">{{ $t('path.benefits') }}</NuxtLink>
       <NuxtLink class="link" :to="localePath('/method')">{{ $t('path.method') }}</NuxtLink>
+      <NuxtLink class="link" :to="localePath('/benefits')">{{ $t('path.benefits') }}</NuxtLink>
       <NuxtLink class="link" :to="localePath('/tool')">{{ $t('path.tool') }}</NuxtLink>
       <NuxtLink class="link" :to="localePath('/use-case')">{{ $t('path.use-case') }}</NuxtLink>
       <NuxtLink class="link" :to="localePath('/services')">{{ $t('path.services') }}</NuxtLink>
-      <NuxtLink class="link" :to="localePath('/contact')">{{ $t('path.contact') }}</NuxtLink>
+
+      <button id="contact-button" class="link button--blue"
+        to="mailto:contact@digitalce.fr?subject=Hello%20Digitalce">
+        {{ $t('cta.contact') }}
+      </button>
       <!--
         Country flags made by Freepik (https://www.freepik.com/)
       -->
@@ -79,14 +83,13 @@ export default Vue.extend({
 
 <style scoped>
 #navbar {
-  background: white;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 75px;
-  box-shadow: 0px 0px 5px gray;
-  background-color: #F1F3F8;
+  height: 120px;
+  box-shadow: 0px 0px 3px gray;
   color: #2D3F65;
+  background-color: #FFF;
   z-index: 10;
 }
 
@@ -104,7 +107,7 @@ export default Vue.extend({
 
 #nav-logo img {
   margin-left: 30px;
-  height: 30px;
+  height: 120px;
   vertical-align: middle;
 }
 
@@ -127,21 +130,27 @@ a {
     margin-right: 20px;
   }
 
-  #nav-links a, #nav-links .flag {
+  #nav-links a, #nav-links button, #nav-links .flag {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
   }
 
+  #navbar #contact-button {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+  }
+
   .link {
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px;
     border-bottom: 1px solid transparent;
   }
 
   .link:not(.img) {
     position: relative;
+    line-height: 31px
   }
 
   a {
@@ -194,7 +203,6 @@ a {
     margin-bottom: 5px;
     position: relative;
     background: #cdcdcd;
-    border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
