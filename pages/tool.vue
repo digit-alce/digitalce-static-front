@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.tool.title') }}
-    </div>
+    </h2>
     <div class="tool-items">
       <ImageTextDisplay
         v-for="(item, index) in $t('pages.tool.items')"

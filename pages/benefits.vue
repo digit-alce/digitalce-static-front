@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.benefits.title') }}
-    </h1>
+    </h2>
     <div id="benefits">
       <div
         v-for="(item, index) in $t('pages.benefits.items')"
@@ -10,9 +10,9 @@
         class="item benefit"
         :class="getGridColumnClass(index, 3)"
       >
-        <div class="text-item-title underline">
+        <h4 class="text-item-title title underline">
           {{ item.title }}
-        </div>
+        </h4>
         <p class="text-item-body" v-html="item.body"/>
       </div>
     </div>

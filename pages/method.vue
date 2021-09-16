@@ -1,8 +1,8 @@
 <template>
   <div class="page-content">
-    <h1 class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.method.title') }}
-    </h1>
+    </h2>
     <p class="body-text" v-html="body_text" />
     <div id="method-items">
       <ImageTextDisplay

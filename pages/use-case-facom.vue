@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.use-case-facom.title') }}
-    </div>
+    </h2>
     <div class="page-subtitle">
-      <div class="page-subtitle-big">
+      <h4 class="page-subtitle-big subtitle">
         {{ $t('pages.use-case-facom.subtitle-big') }}
-      </div>
-      <div class="page-subtitle-small">
+      </h4>
+      <h4 class="page-subtitle-small subtitle">
         {{ $t('pages.use-case-facom.subtitle-small') }}
-      </div>
+      </h4>
     </div>
     <div id="use-cases">
       <div
@@ -17,16 +17,16 @@
         :key="index"
         class="item use-case"
       >
-        <div class="text-item-title underline">
+        <h1 class="text-item-title title underline">
           {{ item.title }}
-        </div>
+        </h1>
         <p class="text-item-body" v-html="item.body"/>
       </div>
     </div>
     <div class="testimony">
-      <div class="testimony-title">
+      <h1 class="testimony-title title">
         {{ $t('pages.use-case-facom.testimony.title') }}
-      </div>
+      </h1>
       <div class="testimony-body" v-html="testimony_body">
         {{ $t('pages.use-case-facom.testimony.body') }}
       </div>
@@ -76,10 +76,6 @@ export default Vue.extend({
   margin-bottom: 60px;
 }
 
-.page-subtitle-big {
-  text-transform: uppercase;
-}
-
 .page-subtitle-small {
   margin-top: 30px;
 }
@@ -90,8 +86,6 @@ export default Vue.extend({
 }
 
 .testimony-title {
-  font-family: MainFont;
-  font-size: 27px;
   margin-bottom: 2rem;
 }
 

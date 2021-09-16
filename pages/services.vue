@@ -1,15 +1,14 @@
 <template>
   <div>
-    <h1 class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.services.title') }}
-    </h1>
+    </h2>
     <div id="service-items">
       <ImageTextDisplay
         v-for="(item, index) in $t('pages.services.items')"
         :key="index"
         :title="item.title"
         :body-text="item.body"
-        :icon="item.icon"
         class="service-item"
         :class="getGridColumnClass(index, 3)"
         title-size-px="30"
@@ -22,7 +21,7 @@
         class="pricing-item"
         :class="getGridColumnClass(index, 2)"
       >
-        <div class="text-item-title underline">{{ item.title }}</div>
+        <h4 class="text-item-title title underline">{{ item.title }}</h4>
         <p class="text-item-body" v-html="item.body"/>
       </div>
     </div>
@@ -51,7 +50,6 @@ export default Vue.extend({
 <style scoped>
 
 .cta-pre-text {
-  font-family: MainFont;
   font-size: 24px;
   margin-bottom: 2rem;
 }

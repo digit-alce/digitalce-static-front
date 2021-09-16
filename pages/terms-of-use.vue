@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="page-title">Terms of Use</h1>
+    <h2 class="page-title title">Terms of Use</h2>
     <div class="">
     </div>
   </div>

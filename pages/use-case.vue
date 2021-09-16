@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.use-case.title') }}
-    </div>
+    </h2>
     <p class="body-text" v-html="body_text" />
 
     <div class="use-case-group">
@@ -12,9 +12,9 @@
         class="use-case-item"
         :class="getGridColumnClass(index, 3)"
       >
-        <div class="use-case-title">
+        <h4 class="use-case-title title">
           {{ item.title }}
-        </div>
+        </h4>
         <img class="use-case-img" :src="pictures[index]">
         <p class="use-case-body" v-html="item.body" />
       </div>
@@ -36,9 +36,9 @@
         class="use-case-item"
         :class="getGridColumnClass(index, 3)"
       >
-        <div class="use-case-title">
+        <h4 class="use-case-title title">
           {{ item.title }}
-        </div>
+        </h4>
         <img class="use-case-img" :src="pictures[index+3]">
         <p class="use-case-body" v-html="item.body" />
       </div>
@@ -110,31 +110,18 @@ export default Vue.extend({
 }
 
 .use-case-title {
-  font-size: 30px;
   height: 60px;
-  text-transform: uppercase;
-  font-family: MainFont;
 }
 
 .cta-pre-text {
-  font-family: MainFont;
   font-size: 24px;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .use-case-item {
-  /* display: flex;         */
-  /* flex-direction: column;*/
   text-align: center;
 }
 
-/*
-.use-case-title, .use-case-img, .use-case-body {
-  flex: 1 1 0px;
-  text-align: center;
-}
-*/
 
 @media screen and (max-width: 9000px) {
   .use-case-group {

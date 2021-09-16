@@ -15,12 +15,12 @@
           class="imagetext-icon"
           :class="icon"
         />
-        <div class="imagetext-title">
+        <h4 class="imagetext-title title">
           {{ title }}
-        </div>
-        <div class="imagetext-subtitle">
+        </h4>
+        <h4 class="imagetext-subtitle subtitle">
           {{ subtitle }}
-        </div>
+        </h4>
         <p v-if="!bodyTextBelow" class="imagetext-body" v-html="bodyText" />
       </div>
     </div>
@@ -85,9 +85,6 @@ export default Vue.extend({
   computed: {
     cssProps () {
       return {
-        '--title-font-size': this.titleSizePx + 'px',
-        '--subtitle-font-size': this.subtitleSizePx + 'px',
-        '--body-font-size': this.bodySizePx + 'px',
         '--image-width': this.imageWidthPx + 'px',
         '--body-alignment': this.justifyBody ? 'justify' : 'center'
       }
@@ -112,22 +109,11 @@ export default Vue.extend({
   font-size: 50px;
 }
 
-.imagetext-title {
-  text-transform: uppercase;
-}
-
-.imagetext-subtitle {
-  font-size: var(--subtitle-font-size);
-}
-
 .imagetext-title, .imagetext-subtitle {
   margin-top: 10px;
-  font-family: MainFont;
 }
 
 .imagetext-body {
-  font-size: var(--body-font-size);
-  font-family: SecondaryFont;
   margin-top: 1rem;
   color: black;
 }
@@ -137,10 +123,6 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 9000px) {
-  .imagetext-title {
-    font-size: var(--title-font-size);
-  }
-
   .imagetext-body {
     text-align: var(--body-alignment);
   }
@@ -155,10 +137,6 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 900px) {
-  .imagetext-title {
-    font-size: 24px;
-  }
-
   .imagetext-body {
     text-align: justify;
   }

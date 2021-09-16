@@ -55,13 +55,12 @@ export default {
           messages: {
             en: {
               path: {
-                benefits: 'Benefits',
-                method: 'Method',
-                tool: 'Innov&Scale 2.0',
-                'use-case': 'Use Cases',
+                method: 'Innov&Scale® method',
+                benefits: 'Innov&Scale® benefits',
+                tool: 'Innov&Scale® 2.0',
+                'use-case': 'Use case',
                 'use-case-facom': 'Use Case: FACOM',
                 services: 'Services',
-                contact: 'Contact',
                 'privacy-policy': 'Privacy Policy',
                 'terms-of-use': 'Terms of Use',
                 about: 'About'
@@ -70,7 +69,7 @@ export default {
                 benefits: 'See the benefits',
                 method: 'About our method',
                 services: 'Our services',
-                'innov-scale': 'Innov&Scale 2.0',
+                'innov-scale': 'Innov&Scale® 2.0',
                 tool: 'About our tool',
                 discover: 'Discover',
                 'use-case': 'See use case',
@@ -82,7 +81,7 @@ export default {
                   title: 'Make your digital transformation a success',
                   feedbacks: {
                     facom: {
-                      quote: '"(...) Each step must be carried out in order with rigor and perseverance, the Innov&Scale method allows us to successfully carry out this project from start to finish (...)"',
+                      quote: '"(...) Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish (...)"',
                       signature: '- Yves Antier - VP et GM Tool & Storage France, FACOM Black & Decker'
                     }
                   },
@@ -92,13 +91,13 @@ export default {
                     },
                     tool: {
                       title: 'A unique digital tool to ensure and share completion and time management of the innovation project',
-                      subtitle: 'Innov&Scale 2.0',
-                      body: 'Innov&Scale 2.0 allows you to carry out the digital transformation in real time using the method'
+                      subtitle: 'Innov&Scale® 2.0',
+                      body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the method'
                     },
                     'use-case': {
                       title: 'Use cases',
                       subtitle: 'Discover',
-                      body: 'Discover how FACOM reshaped its lifetime guarantee with Innov&Scale method'
+                      body: 'Discover how FACOM reshaped its lifetime guarantee with Innov&Scale® method'
                     }
                   }
                 },
@@ -135,8 +134,8 @@ export default {
                   ]
                 },
                 method: {
-                  title: 'Innov&Scale Method',
-                  body: 'The 5 steps of the Innov&Scale method guide the digital transformation project towards success, in successive and achievable steps.<br/><br/>The right mix of innovative methods (design thinking, mural...) and legacy methods (change management...) at the right place and the right time. <br/><br/>Each step requires the completion of pre-work to prepare the step, then the completion of a deliverable that formalizes the work accomplished.<br/><br/>Each step feeds the next step and is part of a complete process.<br/><br/>The 5-steps allow the collaborator to follow and share step by step the progress of the digital transformation project towards its realization and the achievement of its objectives.',
+                  title: 'Innov&Scale® Method',
+                  body: 'The 5 steps of the Innov&Scale® method guide the digital transformation project towards success, in successive and achievable steps.<br/><br/>The right mix of innovative methods (design thinking, mural...) and legacy methods (change management...) at the right place and the right time. <br/><br/>Each step requires the completion of pre-work to prepare the step, then the completion of a deliverable that formalizes the work accomplished.<br/><br/>Each step feeds the next step and is part of a complete process.<br/><br/>The 5-steps allow the collaborator to follow and share step by step the progress of the digital transformation project towards its realization and the achievement of its objectives.',
                   items: [
                     {
                       icon: 'far fa-eye',
@@ -171,11 +170,11 @@ export default {
                   ]
                 },
                 tool: {
-                  title: 'Innov&Scale 2.0',
+                  title: 'Innov&Scale® 2.0',
                   items: [
                     {
                       title: 'Quick and easy innovation project visualisation',
-                      body: 'The Innov&Scale 2.0 dashboard provides you with quick and easy way to visualize the innovation project situation as you move forward and use the Innov&Scale method.<br/><br/>These graphs, in addition to accompanying the organization towards the realization of the innovation project, also serve as progress management tool. Indeed, for each of the five steps, the tool determines the completion rate and time management of the project.'
+                      body: 'The Innov&Scale® 2.0 dashboard provides you with quick and easy way to visualize the innovation project situation as you move forward and use the Innov&Scale® method.<br/><br/>These graphs, in addition to accompanying the organization towards the realization of the innovation project, also serve as progress management tool. Indeed, for each of the five steps, the tool determines the completion rate and time management of the project.'
                     },
                     {
                       title: 'Every step of the 5-steps method is detailed',
@@ -183,7 +182,7 @@ export default {
                     },
                     {
                       title: 'Completeness of to-do pre-work and deliverables for each sub-step',
-                      body: 'The organization applies the Innov&Scale method through the implementation of concrete and understandable actions at each sub-steps of the method.<br/><br/>The pre-work and deliverables requirements to be carried out at each sub-steps are clearly defined. Their completion contributes to the progress of the project and thus the success of the digital transformation.'
+                      body: 'The organization applies the Innov&Scale® method through the implementation of concrete and understandable actions at each sub-steps of the method.<br/><br/>The pre-work and deliverables requirements to be carried out at each sub-steps are clearly defined. Their completion contributes to the progress of the project and thus the success of the digital transformation.'
                     },
                     {
                       title: 'Quick and easy update of each tool',
@@ -193,8 +192,8 @@ export default {
                 },
                 'use-case': {
                   title: 'Use Cases',
-                  body: 'Discover use cases examples of the implementation of the Innov&Scale method within different fields and organization',
-                  'facom-pre-cta': 'Discover facom\'s innov&scale experience',
+                  body: 'Discover use cases examples of the implementation of the Innov&Scale® method within different fields and organization',
+                  'facom-pre-cta': 'Discover facom\'s Innov&Scale® experience',
                   items: [
                     {
                       title: 'Sales & marketing',
@@ -225,7 +224,7 @@ export default {
                 'use-case-facom': {
                   title: 'Use Case FACOM',
                   'subtitle-big': 'Facom Lifetime Guarantee: Simpler, Faster And Greener',
-                  'subtitle-small': 'How did we reshape lifetime guarantee with Innov&Scale?',
+                  'subtitle-small': 'How did we reshape lifetime guarantee with Innov&Scale®?',
                   items: [
                     {
                       title: 'Envision',
@@ -250,7 +249,7 @@ export default {
                   ],
                   testimony: {
                     title: 'Yves Antier, VP and GM Tool & Storage France, FACOM Black & Decker testimony',
-                    body: '"We had identified an idea to digitize one of FACOM\'s core brand values, and everyone came up with a solution.<br/>The Innov&Scale method did two things that we would have been unable to do alone:<br/><ul><li>Share a unique vision of the project<li>Co-create the solution with end-users and our distribution partners</ul>These two elements were fundamental to the success of this project.<br/><br/>The speed of execution in the preparation of the full-scale test and the rapid successive improvements in contact with a start up state of mind are often incompatible with the matrix mode of operation of large groups.<br/><br/>Finally, the stumbling block is often the industrialization because it is necessary to put larger amounts of investment on the table, which calls upon a multitude of internal functions. Only the preparation of a structured business case allows the project to be brought to term.<br/>In fact, each of the steps must be carried out in order with rigor and perseverance. The Innov&Scale method allows you to successfully carry out this project from start to finish.<br/><br/>I think that the method provided the collective confidence to carry out the project, each step being structuring, with an external project manager who makes us move forward more quickly.<br/><br/>Thanks to this method, the brand has been enhanced with end-users, our distribution partners and internally. This project could snowball into other brands and other countries in the group."'
+                    body: '"We had identified an idea to digitize one of FACOM\'s core brand values, and everyone came up with a solution.<br/>The Innov&Scale® method did two things that we would have been unable to do alone:<br/><ul><li>Share a unique vision of the project<li>Co-create the solution with end-users and our distribution partners</ul>These two elements were fundamental to the success of this project.<br/><br/>The speed of execution in the preparation of the full-scale test and the rapid successive improvements in contact with a start up state of mind are often incompatible with the matrix mode of operation of large groups.<br/><br/>Finally, the stumbling block is often the industrialization because it is necessary to put larger amounts of investment on the table, which calls upon a multitude of internal functions. Only the preparation of a structured business case allows the project to be brought to term.<br/>In fact, each of the steps must be carried out in order with rigor and perseverance. The Innov&Scale® method allows you to successfully carry out this project from start to finish.<br/><br/>I think that the method provided the collective confidence to carry out the project, each step being structuring, with an external project manager who makes us move forward more quickly.<br/><br/>Thanks to this method, the brand has been enhanced with end-users, our distribution partners and internally. This project could snowball into other brands and other countries in the group."'
                   }
                 },
                 services: {
@@ -259,7 +258,7 @@ export default {
                   items: [
                     {
                       title: 'Coaching',
-                      body: 'Coach project directors to use Innov&Scale method for current innovative projects',
+                      body: 'Coach project directors to use Innov&Scale® method for current innovative projects',
                       icon: 'fas fa-users'
                     },
                     {
@@ -268,8 +267,8 @@ export default {
                       icon: 'far fa-play-circle'
                     },
                     {
-                      title: 'Innov&Scale 2.0',
-                      body: 'Specifically designed to support and equip the implementation of the Innov&Scale method.<br/><br/>Provides you quick and easy visualisation of your on-time completeness and time management of your innovation project.',
+                      title: 'Innov&Scale® 2.0',
+                      body: 'Specifically designed to support and equip the implementation of the Innov&Scale® method.<br/><br/>Provides you quick and easy visualisation of your on-time completeness and time management of your innovation project.',
                       icon: 'fas fa-chart-line'
                     }
                   ],
@@ -292,9 +291,9 @@ export default {
             },
             fr: {
               path: {
-                benefits: 'Bénéfices',
-                method: 'Méthode',
-                tool: 'Innov&Scale 2.0',
+                benefits: 'Innov&Scale®: Bénéfices',
+                method: 'Innov&Scale®: Méthode',
+                tool: 'Innov&Scale® 2.0',
                 'use-case': 'Cas d\'usage',
                 'use-case-facom': 'Cas d\'usage: FACOM',
                 services: 'Services',
@@ -308,7 +307,7 @@ export default {
                 method: 'Méthode',
                 services: 'Services',
                 tool: 'L\'outil',
-                'innov-scale': 'Innov&Scale 2.0',
+                'innov-scale': 'Innov&Scale® 2.0',
                 discover: 'Découvrir',
                 'use-case': 'Cas d\'usage',
                 contact: 'Contact',
@@ -319,7 +318,7 @@ export default {
                   title: 'Faites de votre transformation digitale un succès',
                   feedbacks: {
                     facom: {
-                      quote: '"(...) Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale nous permet de mener à bien ce projet du début à la fin (...)"',
+                      quote: '"(...) Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin (...)"',
                       signature: 'Yves Antier - Vice président et Directeur général de FACOM, groupe Stanley Black & Decker'
                     }
                   },
@@ -329,13 +328,13 @@ export default {
                     },
                     tool: {
                       title: 'Un outil digital unique pour concrétiser et partager en temps réel son projet d\'innovation',
-                      subtitle: 'Innov&Scale 2.0',
-                      body: 'INNOV&SCALE 2.0 permet de réaliser avec succès en temps réel votre transformation digitale grâce à la méthode Innov&Scale'
+                      subtitle: 'Innov&Scale® 2.0',
+                      body: 'INNOV&SCALE 2.0 permet de réaliser avec succès en temps réel votre transformation digitale grâce à la méthode Innov&Scale®'
                     },
                     'use-case': {
                       title: 'Cas d\'usage',
                       subtitle: 'Découvrez',
-                      body: 'Découvrez comment la marque d\'outillage FACOM a transformé sa promesse de garantie à vie avec la méthode Innov&Scale'
+                      body: 'Découvrez comment la marque d\'outillage FACOM a transformé sa promesse de garantie à vie avec la méthode Innov&Scale®'
                     }
                   }
                 },
@@ -372,8 +371,8 @@ export default {
                   ]
                 },
                 method: {
-                  title: 'La méthode Innov&Scale',
-                  body: 'Les 5 étapes de la méthode Innov&Scale guident le projet de transformation digitale vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
+                  title: 'La méthode Innov&Scale®',
+                  body: 'Les 5 étapes de la méthode Innov&Scale® guident le projet de transformation digitale vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale® est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
                   items: [
                     {
                       icon: 'far fa-eye',
@@ -408,11 +407,11 @@ export default {
                   ]
                 },
                 tool: {
-                  title: 'Innov&Scale 2.0',
+                  title: 'Innov&Scale® 2.0',
                   items: [
                     {
                       title: 'Visualisation simple et rapide du projet d\'innovation',
-                      body: 'Le tableau de bord Innov&Scale 2.0 offre un moyen simple et rapide de visualiser la situation du projet d\'innovation au fur et à mesure de l\'avancement de l\'utilisation de la méthode Innov&Scale.<br/><br/>Les graphiques, en plus d\'accompagner l\'organisation vers la réalisation du projet d\'innovation, servent également d\'outils de gestion de l\'avancement. En effet, pour chacune des 5 étapes, l\'outil détermine le taux de réalisation du projet et le temps passé.'
+                      body: 'Le tableau de bord Innov&Scale® 2.0 offre un moyen simple et rapide de visualiser la situation du projet d\'innovation au fur et à mesure de l\'avancement de l\'utilisation de la méthode Innov&Scale®.<br/><br/>Les graphiques, en plus d\'accompagner l\'organisation vers la réalisation du projet d\'innovation, servent également d\'outils de gestion de l\'avancement. En effet, pour chacune des 5 étapes, l\'outil détermine le taux de réalisation du projet et le temps passé.'
                     },
                     {
                       title: 'Chacune des 5 etapes est détaillée',
@@ -420,7 +419,7 @@ export default {
                     },
                     {
                       title: 'Exhaustivité du travail préalable à faire et des produits à livrer pour chaque sous-étape',
-                      body: 'Application de la méthode Innov&Scale à travers la mise en œuvre d\'actions concrètes et compréhensibles à chaque sous-étape de la méthode.<br/><br/>Les exigences en matière de travaux préalables et de livrables à réaliser à chaque sous-étape sont clairement définies. Leur réalisation contribue à l\'avancement du projet et donc à la réussite de la transformation digitale.'
+                      body: 'Application de la méthode Innov&Scale® à travers la mise en œuvre d\'actions concrètes et compréhensibles à chaque sous-étape de la méthode.<br/><br/>Les exigences en matière de travaux préalables et de livrables à réaliser à chaque sous-étape sont clairement définies. Leur réalisation contribue à l\'avancement du projet et donc à la réussite de la transformation digitale.'
                     },
                     {
                       title: 'Mise à jour facile et rapide de chaque tâche à accomplir',
@@ -430,8 +429,8 @@ export default {
                 },
                 'use-case': {
                   title: 'Cas d\'usage',
-                  body: 'Découvrez des exemples de cas d\'usage de la méthode Innov&Scale dans différents domaines et organisations',
-                  'facom-pre-cta': 'Découvrez l\'expérience FACOM Innov&Scale',
+                  body: 'Découvrez des exemples de cas d\'usage de la méthode Innov&Scale® dans différents domaines et organisations',
+                  'facom-pre-cta': 'Découvrez l\'expérience FACOM Innov&Scale®',
                   items: [
                     {
                       title: 'Ventes & Marketing ',
@@ -462,7 +461,7 @@ export default {
                 'use-case-facom': {
                   title: 'Cas d\'usage FACOM',
                   'subtitle-big': 'La garantie à vie facom: plus simple, plus rapide, plus verte',
-                  'subtitle-small': 'Comment avons-nous remodelé la garantie à vie FACOM avec Innov&Scale?',
+                  'subtitle-small': 'Comment avons-nous remodelé la garantie à vie FACOM avec Innov&Scale®?',
                   items: [
                     {
                       title: 'Envisager',
@@ -487,7 +486,7 @@ export default {
                   ],
                   testimony: {
                     title: 'Témoignage d\'Yves Antier, Vice Président et Directeur Général de FACOM, groupe Stanley Black&Decker',
-                    body: '" Nous avions identifié une idée de digitalisation d\'une des valeurs piliers de la marque Facom, et chacun y allait de sa solution.<br/>La Méthode a fait deux choses que nous aurions été incapables de faire seuls:<br/><ul><li>Partager une vision unique du projet<li>Co-créer la solution avec des utilisateurs finaux et nos partenaires distributeurs</ul>Ces deux éléments ont été fondateurs dans le succès de ce projet.<br/><br/>La vitesse d\'exécution dans la préparation du test grandeur nature et les améliorations successives rapides au contact d\'un esprit Start Up, sont souvent incompatibles avec le mode de fonctionnement en Matrice des grands groupes.<br/><br/>Enfin le point d\'achoppement est souvent l\'industrialisation car il faut mettre des montants d\'investissement plus importants sur la table ce qui fait appel à une multitudes de fonctions internes, seule la préparation du business case structuré permet d\'emmener le projet à terme.<br/>En fait chacune des étapes doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale permet de mener ce projet de bout en bout avec succès.<br/><br/>Je pense que la méthode Innov&Scale a apporté la confiance collective pour mener à bien le projet, chaque étape étant structurante, avec un chef de projet extérieur qui nous fait avancer plus vite.<br/><br/>Grâce à cette méthode, la marque a été valorisée auprès des utilisateurs finaux, de nos partenaires de distribution et en interne. Ce projet pourrait faire boule de neige pour d\'autres marques et d\'autres pays du groupe."'
+                    body: '" Nous avions identifié une idée de digitalisation d\'une des valeurs piliers de la marque Facom, et chacun y allait de sa solution.<br/>La Méthode a fait deux choses que nous aurions été incapables de faire seuls:<br/><ul><li>Partager une vision unique du projet<li>Co-créer la solution avec des utilisateurs finaux et nos partenaires distributeurs</ul>Ces deux éléments ont été fondateurs dans le succès de ce projet.<br/><br/>La vitesse d\'exécution dans la préparation du test grandeur nature et les améliorations successives rapides au contact d\'un esprit Start Up, sont souvent incompatibles avec le mode de fonctionnement en Matrice des grands groupes.<br/><br/>Enfin le point d\'achoppement est souvent l\'industrialisation car il faut mettre des montants d\'investissement plus importants sur la table ce qui fait appel à une multitudes de fonctions internes, seule la préparation du business case structuré permet d\'emmener le projet à terme.<br/>En fait chacune des étapes doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® permet de mener ce projet de bout en bout avec succès.<br/><br/>Je pense que la méthode Innov&Scale® a apporté la confiance collective pour mener à bien le projet, chaque étape étant structurante, avec un chef de projet extérieur qui nous fait avancer plus vite.<br/><br/>Grâce à cette méthode, la marque a été valorisée auprès des utilisateurs finaux, de nos partenaires de distribution et en interne. Ce projet pourrait faire boule de neige pour d\'autres marques et d\'autres pays du groupe."'
                   }
                 },
                 services: {
@@ -496,7 +495,7 @@ export default {
                   items: [
                     {
                       title: 'Coaching',
-                      body: 'Accompagner les directeurs de projets dans l\'utilisation de la méthode Innov&Scale.',
+                      body: 'Accompagner les directeurs de projets dans l\'utilisation de la méthode Innov&Scale®.',
                       icon: 'fas fa-users'
                     },
                     {
@@ -505,8 +504,8 @@ export default {
                       icon: 'far fa-play-circle'
                     },
                     {
-                      title: 'Innov&Scale 2.0',
-                      body: 'Spécifiquement conçu pour soutenir et outiller la mise en oeuvre de la méthode Innov&Scale.<br/><br/>L\'outil vous permet de visualiser en temps réel, rapidement et facilement le taux d\'avancement du projet d\'innovation et le temps passé.',
+                      title: 'Innov&Scale® 2.0',
+                      body: 'Spécifiquement conçu pour soutenir et outiller la mise en oeuvre de la méthode Innov&Scale®.<br/><br/>L\'outil vous permet de visualiser en temps réel, rapidement et facilement le taux d\'avancement du projet d\'innovation et le temps passé.',
                       icon: 'fas fa-chart-line'
                     }
                   ],
@@ -523,7 +522,7 @@ export default {
                 },
                 contact: {
                   title: 'Contact',
-                  body: 'Intéressé par la méthode Innov&Scale? Vous souhaitez plus d\'informations?<br/><br/>N\'hésitez pas à nous contacter à l\'adresse <a href="mailto:contact@digitalce.fr">contact@digitalce.fr</a><br/><br/>Nous reviendrons vers vous très rapidement.'
+                  body: 'Intéressé par la méthode Innov&Scale®? Vous souhaitez plus d\'informations?<br/><br/>N\'hésitez pas à nous contacter à l\'adresse <a href="mailto:contact@digitalce.fr">contact@digitalce.fr</a><br/><br/>Nous reviendrons vers vous très rapidement.'
                 }
               }
             },

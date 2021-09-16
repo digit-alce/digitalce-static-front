@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="page-title">Privacy Policy</h1>
+    <h2 class="page-title title">Privacy Policy</h2>
     <div class="">
     </div>
   </div>

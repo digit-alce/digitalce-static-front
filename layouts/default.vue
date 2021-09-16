@@ -29,12 +29,23 @@ html, body, #__nuxt, #__layout {
   background-color: #FFF;
 }
 
-.title, .subtitle {
+h1, h2, h3, h4, h5, h6 {
   font-family: SecondaryFont;
   font-weight: 100;
   letter-spacing: 0px;
 }
 
+h1 {
+  font-size: 42.5px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 20px;
+}
 
 *{
   margin: 0;
@@ -57,13 +68,13 @@ img {
   margin: 50px 4vw;
   width: 80%;
   max-width: 1000px;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-title, .page-subtitle {
-  text-align: center;
+  text-align: left;
   font-weight: 300;
   margin-bottom: 50px;
 }
@@ -99,7 +110,6 @@ button, .button {
 }
 
 .text-item-title {
-  font-size: 20px;
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
@@ -127,18 +137,6 @@ button, .button {
 }
 
 @media screen and (max-width: 9000px) {
-  .page-title {
-    font-size: 40px;
-  }
-
-  .page-subtitle-big {
-    font-size: 26px;
-  }
-
-  .page-subtitle-small {
-    font-size: 24px;
-  }
-
   .column-1 {
     grid-column: 1;
   }
@@ -150,25 +148,9 @@ button, .button {
   .column-3 {
     grid-column: 3;
   }
-
-  .body-text {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 900px) {
-  .page-title {
-    font-size: 32px;
-  }
-
-  .page-subtitle-big {
-    font-size: 25px;
-  }
-
-  .page-subtitle-small {
-    font-size: 20px;
-  }
-
   .column-1 {
     grid-column: 1;
   }
@@ -179,10 +161,6 @@ button, .button {
 
   .column-3 {
     grid-column: 1;
-  }
-
-  .body-text {
-    text-align: justify;
   }
 }
 

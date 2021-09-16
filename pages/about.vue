@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="page-title">
+    <h2 class="page-title title">
       {{ $t('pages.about.title') }}
-    </h1>
+    </h2>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="page-title">
+    <h1 class="page-title title">
       {{ $t('pages.landing.title') }}
     </h1>
     <div class="category category-intro">
@@ -23,18 +23,18 @@
         {{ $t('cta.benefits') }}
       </NuxtLink>
       <Divider />
-      <div class="category-title">
+      <h4 class="category-title title">
         {{ $t('pages.landing.categories.method.title') }}
-      </div>
+      </h4>
       <div id="method-steps">
         <div
           v-for="(item, index) in $t('pages.method.items')"
           :key="index"
           class="step"
         >
-          <div class="item-title">
+          <h4 class="item-title title">
             {{ item.title }}
-          </div>
+          </h4>
           <i :class="item.icon" />
         </div>
       </div>
@@ -47,9 +47,9 @@
     </div>
     <Divider />
     <div class="category category-tool">
-      <div class="category-title">
+      <h4 class="category-title title">
         {{ $t('pages.landing.categories.tool.title') }}
-      </div>
+      </h4>
       <ImageTextDisplay
         :title="$t('pages.landing.categories.tool.subtitle')"
         :subtitle="$t('pages.landing.categories.tool.body')"
@@ -67,9 +67,9 @@
     </div>
     <Divider />
     <div class="category category-use-case">
-      <div class="category-title">
+      <h1 class="category-title title">
         {{ $t('pages.landing.categories.use-case.title') }}
-      </div>
+      </h1>
       <ImageTextDisplay
         :title="$t('pages.landing.categories.use-case.subtitle')"
         :subtitle="$t('pages.landing.categories.use-case.body')"
@@ -113,8 +113,6 @@ export default Vue.extend({
 }
 
 .category-title {
-  font-family: MainFont;
-  text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
@@ -143,8 +141,6 @@ export default Vue.extend({
 }
 
 .step .item-title {
-  font-family: MainFont;
-  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
@@ -158,10 +154,6 @@ button {
 }
 
 @media screen and (max-width: 9000px) {
-  .category-title {
-    font-size: 30px;
-  }
-
   .feedback {
     font-size: 22px;
   }
@@ -179,10 +171,6 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-  .category-title {
-    font-size: 27px;
-  }
-
   .feedback {
     font-size: 20px;
   }
@@ -193,10 +181,6 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-  .category-title {
-    font-size: 24px;
-  }
-
   .feedback {
     font-size: 18px;
   }
