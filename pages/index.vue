@@ -1,20 +1,10 @@
 <template>
   <div>
-    <div id="page-top-full">
-      <div id="blue-container" class="max-width">
-        <div id="blue-inner-container">
-          <h1 class="page-title title">
-            {{ $t('pages.landing.title') }}
-          </h1>
-          <h4 class="page-subtitle subtitle">
-            {{ $t('pages.landing.subtitle') }}
-          </h4>
-          <p class="body-text">
-            {{ $t('pages.landing.body') }}
-          </p>
-        </div>
-      </div>
-    </div>
+    <BlueBox
+      :title="$t('pages.landing.title')"
+      :subtitle="$t('pages.landing.subtitle')"
+      :body="$t('pages.landing.body')"
+    />
     <div id="main-content">
 
       <div class="category">
@@ -23,7 +13,7 @@
         <p class="category-body">{{ $t('pages.landing.categories.work.body') }}</p>
       </div>
 
-      <Divider transparent/>
+      <Divider transparent big/>
       <div class="category">
         <h2 class="category-title">{{ $t('pages.landing.categories.method.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.method.subtitle')}}</p>
@@ -31,7 +21,7 @@
         <NuxtLink class="button button--blue" :to="localePath('/method')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
 
-      <Divider transparent/>
+      <Divider transparent big/>
       <div class="category">
         <h2 class="category-title">{{ $t('pages.landing.categories.benefits.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.benefits.subtitle')}}</p>
@@ -39,7 +29,7 @@
         <NuxtLink class="button button--blue" :to="localePath('/benefits')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
 
-      <Divider transparent/>
+      <Divider transparent big/>
       <div class="category">
         <h2 class="category-title">{{ $t('pages.landing.categories.tool.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.tool.subtitle')}}</p>
@@ -50,7 +40,7 @@
         <NuxtLink class="button button--blue" :to="localePath('/tool')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
 
-      <Divider transparent/>
+      <Divider transparent big/>
       <div class="category">
         <h2 class="category-title">{{ $t('pages.landing.categories.use-case.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.use-case.subtitle')}}</p>
@@ -80,19 +70,6 @@ export default Vue.extend({
 
 <style scoped>
 
-#page-top-full {
-  background-color: var(--color-grey);
-  padding: 0 3%;
-}
-
-#blue-container {
-  background-color: var(--color-digitalce-blue-darker);
-  color: var(--color-white);
-  margin: auto;
-  padding: 10rem 1rem;
-}
-
-
 .category-title {
   margin-bottom: 3rem;
   text-align: center;
@@ -101,11 +78,16 @@ export default Vue.extend({
 
 .category-subtitle {
   font-size: 17px;
+  line-height: 1.8;
 }
 
 .category-subtitle, .category-body {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.category-body {
+  font-size: 12.5px;
 }
 
 #method-steps {
@@ -185,12 +167,14 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
+
   .step {
     display: block;
     font-size: 20px;
     margin: 0 1.3rem;
     padding: 1rem 0.5rem;
   }
+
   .step .item-title {
     margin-bottom: auto;
   }

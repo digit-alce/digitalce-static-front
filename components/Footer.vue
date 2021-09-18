@@ -16,14 +16,6 @@
     </div>
     <div id="right-footer-links">
       <ul>
-        <li>
-          <NuxtLink
-            class="link"
-            :to="localePath('/contact')">{{ $t('path.contact') }}</NuxtLink>
-        </li>
-        <li>
-          <a href="mailto:contact@digitalce.fr">contact@digitalce.fr</a>
-        </li>
         <li id="copyright-dynamic-date">
           <script>
             const currentYear = new Date().getFullYear()

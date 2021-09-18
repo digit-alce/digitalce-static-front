@@ -49,10 +49,6 @@ export default Vue.extend({
       type: Boolean,
       default: false
     },
-    justifyBody: {
-      type: Boolean,
-      default: false
-    },
     image: {
       type: String,
       default: ''
@@ -86,7 +82,6 @@ export default Vue.extend({
     cssProps () {
       return {
         '--image-width': this.imageWidthPx + 'px',
-        '--body-alignment': this.justifyBody ? 'justify' : 'center'
       }
     }
   }
@@ -96,7 +91,6 @@ export default Vue.extend({
 <style scoped>
 
 .imagetext-top-content {
-  text-align: center;
   width: 100%;
 }
 
@@ -123,10 +117,6 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 9000px) {
-  .imagetext-body {
-    text-align: var(--body-alignment);
-  }
-
   .imagetext-top-content {
     display: flex;
   }
@@ -137,10 +127,6 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 900px) {
-  .imagetext-body {
-    text-align: justify;
-  }
-
   .imagetext-top-content {
     display: block;
   }

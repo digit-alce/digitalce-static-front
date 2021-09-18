@@ -11,7 +11,6 @@
         :body-text="item.body"
         class="service-item"
         :class="getGridColumnClass(index, 3)"
-        title-size-px="30"
       />
     </div>
     <div id="pricing-items">
@@ -21,7 +20,7 @@
         class="pricing-item"
         :class="getGridColumnClass(index, 2)"
       >
-        <h4 class="text-item-title title underline">{{ item.title }}</h4>
+        <h4 class="text-item-title title">{{ item.title }}</h4>
         <p class="text-item-body" v-html="item.body"/>
       </div>
     </div>
@@ -50,19 +49,16 @@ export default Vue.extend({
 <style scoped>
 
 .cta-pre-text {
-  font-size: 24px;
+  font-size: 17px;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 #service-items {
-  text-align: center;
   margin-bottom: 100px;
   display: grid;
   grid-gap: 45px;
-}
-
-.service-item, .pricing-item {
-  text-align: center;
+  line-height: 1.8;
 }
 
 #pricing-items {
@@ -72,12 +68,12 @@ export default Vue.extend({
   grid-gap: 45px;
 }
 
-.underline {
-  margin-bottom: 1.5rem;
+.text-item-title {
+  font-style: italic;
+  font-weight: 600;
 }
 
 .text-item-body {
-  font-size: 18px;
   line-height: 15px;
 }
 

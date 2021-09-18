@@ -89,7 +89,7 @@ export default {
                       body: ''
                     },
                     method: {
-                      title: 'Out method',
+                      title: 'Our method',
                       subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
                       body: ''
                     },
@@ -101,7 +101,7 @@ export default {
                     tool: {
                       title: 'Innov&Scale® 2.0',
                       subtitle: 'A unique digital tool to ensure and share completion and time management of the innovation project',
-                      body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the method'
+                      body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using our method'
                     },
                     'use-case': {
                       title: 'Innov&Scale® use case',
@@ -200,33 +200,33 @@ export default {
                   ]
                 },
                 'use-case': {
-                  title: 'Use Cases',
+                  title: 'Use Case',
                   body: 'Discover use cases examples of the implementation of the Innov&Scale® method within different fields and organization',
-                  'facom-pre-cta': 'Discover facom\'s Innov&Scale® experience',
+                  'facom-pre-cta': 'Discover FACOM\'s<br/>Innov&Scale® experience',
                   items: [
                     {
                       title: 'Sales & marketing',
-                      body: 'Create a full integrated eshop with distributors<br/><br/>Transform paper catalog for sales efficiency and cost avoidance<br/><br/>...'
+                      body: 'Create a full integrated eshop with distributors<br/><br/>Transform paper catalog for sales efficiency and cost avoidance'
                     },
                     {
                       title: 'After sales',
-                      body: 'Transform traditional after sales processes<br/><br/>Boost after sales business <br/><br/>...'
+                      body: 'Transform traditional after sales processes<br/><br/>Boost after sales business '
                     },
                     {
                       title: 'Quality & audit',
-                      body: 'Ensure full auditabily and compliance of finished goods<br/><br/>Align recycling ecosystem for better performance<br/><br/>...'
+                      body: 'Ensure full auditabily and compliance of finished goods<br/><br/>Align recycling ecosystem for better performance'
                     },
                     {
                       title: 'Production & logistics',
-                      body: 'Avoid logistic shortfalls with tracability<br/><br/>Change end-to-end production ecosystem to secure on-time delivery<br/><br/>...'
+                      body: 'Avoid logistic shortfalls with tracability<br/><br/>Change end-to-end production ecosystem to secure on-time delivery'
                     },
                     {
                       title: 'Finance',
-                      body: 'Avoid claims within a distributor ecosystem<br/><br/>Create new easy-to-use financial service<br/><br/>...'
+                      body: 'Avoid claims within a distributor ecosystem<br/><br/>Create new easy-to-use financial service'
                     },
                     {
                       title: 'Human resources',
-                      body: 'Adapt working space for post-covid usage<br/><br/>Rebuild GenZ employee onboarding for better retention<br/><br/>...'
+                      body: 'Adapt working space for post-covid usage<br/><br/>Rebuild GenZ employee onboarding for better retention'
                     }
                   ]
                 },
@@ -346,7 +346,7 @@ export default {
                     tool: {
                       title: 'Innov&Scale® 2.0',
                       subtitle: 'Un outil digital unique pour concrétiser et partager en temps réel son projet d\'innovation',
-                      body: 'INNOV&SCALE 2.0 permet de réaliser avec succès en temps réel votre transformation digitale grâce à la méthode Innov&Scale®'
+                      body: 'Innov&Scale® 2.0 permet de réaliser avec succès en temps réel votre transformation digitale grâce notre méthode'
                     },
                     'use-case': {
                       title: 'Cas d\'usage',
@@ -447,31 +447,31 @@ export default {
                 'use-case': {
                   title: 'Cas d\'usage',
                   body: 'Découvrez des exemples de cas d\'usage de la méthode Innov&Scale® dans différents domaines et organisations',
-                  'facom-pre-cta': 'Découvrez l\'expérience FACOM Innov&Scale®',
+                  'facom-pre-cta': 'Découvrez l\'expérience<br/>FACOM Innov&Scale®',
                   items: [
                     {
                       title: 'Ventes & Marketing ',
-                      body: 'Créer une boutique en ligne entièrement intégrée avec les distributeurs<br/><br/>Transformer un catalogue papier pour augmenter l\'efficacité des ventes et réduire les coûts<br/><br/>...'
+                      body: 'Créer une boutique en ligne entièrement intégrée avec les distributeurs<br/><br/>Transformer un catalogue papier pour augmenter l\'efficacité des ventes et réduire les coûts'
                     },
                     {
                       title: 'Après-vente ',
-                      body: 'Transformer les processus traditionnels d\'après-vente<br/><br/>Dynamiser l\'activite après-vente <br/><br/>...'
+                      body: 'Transformer les processus traditionnels d\'après-vente<br/><br/>Dynamiser l\'activite après-vente '
                     },
                     {
                       title: 'Audit & Qualité ',
-                      body: 'Garantir un audit complet et la conformité des produits finis<br/><br/>Aligner l\'écosystème du recyclage pour une meilleure performance<br/><br/>...'
+                      body: 'Garantir un audit complet et la conformité des produits finis<br/><br/>Aligner l\'écosystème du recyclage pour une meilleure performance'
                     },
                     {
                       title: 'Production & logistique ',
-                      body: 'Éviter les défaillances logistiques grâce à la traçabilité<br/><br/>Modifier l\'écosystème de production de bout-en-bout pour garantir une livraison dans les délais<br/><br/>...'
+                      body: 'Éviter les défaillances logistiques grâce à la traçabilité<br/><br/>Modifier l\'écosystème de production de bout-en-bout pour garantir une livraison dans les délais'
                     },
                     {
                       title: 'Finance',
-                      body: 'Éviter les réclamations au sein d\'un écosystème de distributeurs<br/><br/>Créer un nouveau service financier facile à utiliser<br/><br/>...'
+                      body: 'Éviter les réclamations au sein d\'un écosystème de distributeurs<br/><br/>Créer un nouveau service financier facile à utiliser'
                     },
                     {
                       title: 'Ressources humaines ',
-                      body: 'Adapter l\'espace de travail à l\'usage post-Covid<br/><br/>Reconstruire l\'accueil des employés de la génération Z pour mieux les retenir<br/><br/>...'
+                      body: 'Adapter l\'espace de travail à l\'usage post-Covid<br/><br/>Reconstruire l\'accueil des employés de la génération Z pour mieux les retenir'
                     }
                   ]
                 },

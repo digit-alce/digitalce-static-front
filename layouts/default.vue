@@ -38,8 +38,7 @@ html, body, #__nuxt, #__layout {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: SecondaryFont;
-  font-weight: 100;
-  letter-spacing: 0px;
+  font-weight: 400;
 }
 
 h1 {
