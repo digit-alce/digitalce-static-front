@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main-content">
     <h2 class="page-title title">
       {{ $t('pages.use-case-facom.title') }}
     </h2>
@@ -91,7 +91,6 @@ export default Vue.extend({
 
 .testimony-body {
   text-align: justify;
-  background-color: #e3ebf8;
   padding: 25px;
 }
 

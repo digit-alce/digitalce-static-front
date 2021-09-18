@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main-content">
     <h2 class="page-title title">Privacy Policy</h2>
     <div class="">
     </div>

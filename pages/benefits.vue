@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main-content">
     <h2 class="page-title title">
       {{ $t('pages.benefits.title') }}
     </h2>

@@ -79,6 +79,8 @@ export default {
               pages: {
                 landing: {
                   title: 'Make your digital transformation a success',
+		  subtitle: 'Did you know that only 1 out of 5 companies successfully manage to scale up their innovative projects?',
+                  body: 'The difficulty of successfully scaling up innovation projects is real and prevents companies from sustainably transforming innovation into value and responding to new business opportunities.',
                   feedbacks: {
                     facom: {
                       quote: '"(...) Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish (...)"',

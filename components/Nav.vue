@@ -33,7 +33,6 @@
       <input id="toggle-box" type="checkbox">
       <span></span>
       <span></span>
-      <span></span>
       <ul id="slide-menu">
         <NuxtLink class="link" :to="localePath('/benefits')">
           <li @click="closeMenu()">{{ $t('path.benefits') }}</li>
@@ -87,9 +86,8 @@ export default Vue.extend({
   top: 0;
   width: 100%;
   height: 120px;
-  box-shadow: 0px 0px 3px gray;
-  color: #2D3F65;
-  background-color: #FFF;
+  box-shadow: 0px 0px 3px var(--color-grey);
+  background-color: var(--color-white);
   z-index: 10;
 }
 
@@ -116,7 +114,7 @@ a {
 }
 
 .nuxt-link-active:not(.flag) {
-  border-bottom: 1px solid #2D3F65;
+  border-bottom: 1px solid var(--color-black);
 }
 
 @media screen and (max-width: 9000px) {
@@ -133,7 +131,7 @@ a {
   #nav-links a, #nav-links button, #nav-links .flag {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   #navbar #contact-button {
@@ -154,7 +152,7 @@ a {
   }
 
   a {
-    color: #2D3F65;
+    color: var(--color-black);
   }
 
   .flag img {
@@ -199,13 +197,14 @@ a {
   {
     display: block;
     width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
-    background: #cdcdcd;
+    background: var(--color-black);
     z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    transform-origin: 1px 0px;
+    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
   }
@@ -220,17 +219,12 @@ a {
   #burger-menu input:checked ~ span
   {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-  #burger-menu input:checked ~ span:nth-last-child(3)
-  {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(45deg) translate(0px, -8px);
+    background: var(--color-black);
   }
   #burger-menu input:checked ~ span:nth-last-child(2)
   {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, 8px);
   }
 
   #slide-menu
@@ -241,15 +235,12 @@ a {
     padding: 50px;
     padding-top: 125px;
     padding-bottom: 3000px;
-
-    background: #ededed;
+    background: var(--color-white);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
-
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   #slide-menu li

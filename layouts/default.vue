@@ -1,9 +1,7 @@
 <template>
   <div id="wrapper">
     <Nav />
-    <div id="main-content">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <Footer />
   </div>
 </template>
@@ -21,12 +19,20 @@
   src: url(../assets/fonts/Nanum-Regular.ttf);
 }
 
+:root {
+  --color-digitalce-blue: #071be1;
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-grey: #efefee;
+  --color-linkedin: #0a66c2;
+}
+
 html, body, #__nuxt, #__layout {
   height: 100%;
   font-family: MainFont;
   font-size: 12px;
-  color: #2D3F65;
-  background-color: #FFF;
+  color: var(--color-black);
+  background-color: var(--color-white)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,8 +72,7 @@ img {
 #main-content {
   flex: 1;
   margin: 50px 4vw;
-  width: 80%;
-  max-width: 1000px;
+  width: 90%;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -100,8 +105,8 @@ button, .button {
 }
 
 .button--blue {
-  background-color: #071BE1;
-  color: #fff;
+  background-color: var(--color-digitalce-blue);
+  color: var(--color-white);
 }
 
 .button--blue:hover {
@@ -119,7 +124,7 @@ button, .button {
 }
 
 .underline:after {
-  border-bottom: 6px solid #071BE1;
+  border-bottom: 6px solid var(--color-digitalce-blue);
   opacity: 0.5;
   content:"";
   margin: 0 auto;

@@ -115,7 +115,7 @@ export default Vue.extend({
 
 .imagetext-body {
   margin-top: 1rem;
-  color: black;
+  color: var(--color-black);
 }
 
 .imagetext-body.bottom {

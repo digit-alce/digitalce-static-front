@@ -50,19 +50,17 @@ export default Vue.extend({})
   font-size: 14px;
   box-shadow: 0px 0px 5px gray;
   padding-top: 19px;
-  color: #2D3F65;
-  background-color: #EFEFEE;
+  background-color: var(--color-grey);
   padding-bottom: 1rem;
 }
 
 .linkedin-logo {
-  color: #0a66c2;
+  color: var(--color-linkedin);
   font-size: 32px;
 }
 
 a {
   text-decoration: none;
-  color: #2D3F65;
 }
 
 #left-footer-links {
