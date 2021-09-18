@@ -1,7 +1,7 @@
 full:
 	make gen
 	make cname-gen
-	make commit-push
+	# make commit-push
 	make publish
 
 gen:

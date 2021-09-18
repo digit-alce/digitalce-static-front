@@ -74,32 +74,39 @@ export default {
                 discover: 'Discover',
                 'use-case': 'See use case',
                 contact: 'Contact us',
-                'click-here': 'Click here'
+                'click-here': 'Click here',
+                'learn-more': 'Learn more'
               },
               pages: {
                 landing: {
                   title: 'Make your digital transformation a success',
-		  subtitle: 'Did you know that only 1 out of 5 companies successfully manage to scale up their innovative projects?',
+		              subtitle: 'Did you know that only 1 out of 5 companies successfully manage to scale up their innovative projects?',
                   body: 'The difficulty of successfully scaling up innovation projects is real and prevents companies from sustainably transforming innovation into value and responding to new business opportunities.',
-                  feedbacks: {
-                    facom: {
-                      quote: '"(...) Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish (...)"',
-                      signature: '- Yves Antier - VP et GM Tool & Storage France, FACOM Black & Decker'
-                    }
-                  },
                   categories: {
+                    work: {
+                      title: 'Our work',
+                      subtitle: 'At Digit alce, we help companies realize their digital transformation projects from innovation to industrialization, thanks to our Innov&Scale® method, in 5 structured  and achievable steps.',
+                      body: ''
+                    },
                     method: {
-                      title: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations'
+                      title: 'Out method',
+                      subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
+                      body: ''
+                    },
+                    benefits: {
+                      title: 'Innov&Scale® benefits',
+                      subtitle: '"Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish (...)"',
+                      body: '- Yves Antier - VP et GM Tool & Storage France, FACOM Black & Decker'
                     },
                     tool: {
-                      title: 'A unique digital tool to ensure and share completion and time management of the innovation project',
-                      subtitle: 'Innov&Scale® 2.0',
+                      title: 'Innov&Scale® 2.0',
+                      subtitle: 'A unique digital tool to ensure and share completion and time management of the innovation project',
                       body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the method'
                     },
                     'use-case': {
-                      title: 'Use cases',
-                      subtitle: 'Discover',
-                      body: 'Discover how FACOM reshaped its lifetime guarantee with Innov&Scale® method'
+                      title: 'Innov&Scale® use case',
+                      subtitle: 'Discover how FACOM reshaped its lifetime guarantee with Innov&Scale® method',
+                      body: ''
                     }
                   }
                 },
@@ -318,19 +325,27 @@ export default {
               pages: {
                 landing: {
                   title: 'Faites de votre transformation digitale un succès',
-                  feedbacks: {
-                    facom: {
-                      quote: '"(...) Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin (...)"',
-                      signature: 'Yves Antier - Vice président et Directeur général de FACOM, groupe Stanley Black & Decker'
-                    }
-                  },
+		              subtitle: '',
+                  body: '',
                   categories: {
+                    work: {
+                      title: 'Our work',
+                      subtitle: 'At Digit alce, we help companies realize their digital transformation projects from innovation to industrialization, thanks to our Innov&Scale® method, in 5 structured  and achievable steps.',
+                      body: ''
+                    },
                     method: {
-                      title: 'Une methode unique et innovante en 5 étapes pour réaliser et concrétiser avec succès vos transformations digitales'
+                      title: 'Out method',
+                      subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
+                      body: ''
+                    },
+                    benefits: {
+                      title: 'Innov&Scale® benefits',
+                      subtitle: '"(...) Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin (...)"',
+                      body: 'Yves Antier - Vice président et Directeur général de FACOM, groupe Stanley Black & Decker'
                     },
                     tool: {
-                      title: 'Un outil digital unique pour concrétiser et partager en temps réel son projet d\'innovation',
-                      subtitle: 'Innov&Scale® 2.0',
+                      title: 'Innov&Scale® 2.0',
+                      subtitle: 'Un outil digital unique pour concrétiser et partager en temps réel son projet d\'innovation',
                       body: 'INNOV&SCALE 2.0 permet de réaliser avec succès en temps réel votre transformation digitale grâce à la méthode Innov&Scale®'
                     },
                     'use-case': {

@@ -1,6 +1,19 @@
 <template>
-  <div class="divider" />
+  <div :class="(transparent?'transparent ':'') + 'divider'" />
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  props: {
+    transparent: {
+      type: Boolean,
+      default: false
+    },
+  }
+})
+</script>
 
 <style scoped>
 .divider {
@@ -9,4 +22,9 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.transparent{
+  opacity: 0;
+}
+
 </style>

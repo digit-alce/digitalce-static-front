@@ -21,6 +21,7 @@
 
 :root {
   --color-digitalce-blue: #071be1;
+  --color-digitalce-blue-darker: #0717c0;
   --color-white: #FFF;
   --color-black: #000;
   --color-grey: #efefee;
@@ -73,9 +74,14 @@ img {
   flex: 1;
   margin: 50px 4vw;
   width: 90%;
+  max-width: 1000px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+
+.max-width {
+  max-width: 1000px;
 }
 
 .page-title, .page-subtitle {
@@ -95,13 +101,13 @@ button, .button {
 .button {
   margin: 0 auto;
   text-decoration: none;
-  padding: 20px 10px;
+  padding: 1rem;
   text-align: center;
-  width: 220px;
+  width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px !important;
+  font-weight: 400;;
 }
 
 .button--blue {

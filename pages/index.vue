@@ -1,99 +1,66 @@
 <template>
   <div>
     <div id="page-top-full">
-      <h1 class="page-title title">
-        {{ $t('pages.landing.title') }}
-      </h1>
-      <h4 class="page-subtitle subtitle">
-        {{ $t('pages.landing.subtitle') }}
-      </h4>
-      <p class="body-text">
-        {{ $t('pages.landing.body') }}
-      </p>
+      <div id="blue-container" class="max-width">
+        <div id="blue-inner-container">
+          <h1 class="page-title title">
+            {{ $t('pages.landing.title') }}
+          </h1>
+          <h4 class="page-subtitle subtitle">
+            {{ $t('pages.landing.subtitle') }}
+          </h4>
+          <p class="body-text">
+            {{ $t('pages.landing.body') }}
+          </p>
+        </div>
+      </div>
     </div>
     <div id="main-content">
-      <div class="category category-intro">
-        <img
-          class="main-img"
-          :src="main_picture"
-        >
-        <div id="facom-feedback" class="feedback">
-          <div class="feedback-quote">
-            {{ $t('pages.landing.feedbacks.facom.quote') }}
-          </div>
-          <div class="feedback-signature">
-            {{ $t('pages.landing.feedbacks.facom.signature') }}
-          </div>
+
+      <div class="category">
+        <h2 class="category-title">{{ $t('pages.landing.categories.work.title')}}</h2>
+        <p class="category-subtitle">{{ $t('pages.landing.categories.work.subtitle')}}</p>
+        <p class="category-body">{{ $t('pages.landing.categories.work.body') }}</p>
+      </div>
+
+      <Divider transparent/>
+      <div class="category">
+        <h2 class="category-title">{{ $t('pages.landing.categories.method.title')}}</h2>
+        <p class="category-subtitle">{{ $t('pages.landing.categories.method.subtitle')}}</p>
+        <p class="category-body">{{ $t('pages.landing.categories.method.body') }}</p>
+        <NuxtLink class="button button--blue" :to="localePath('/method')">{{ $t('cta.learn-more') }}</NuxtLink>
+      </div>
+
+      <Divider transparent/>
+      <div class="category">
+        <h2 class="category-title">{{ $t('pages.landing.categories.benefits.title')}}</h2>
+        <p class="category-subtitle">{{ $t('pages.landing.categories.benefits.subtitle')}}</p>
+        <p class="category-body">{{ $t('pages.landing.categories.benefits.body') }}</p>
+        <NuxtLink class="button button--blue" :to="localePath('/benefits')">{{ $t('cta.learn-more') }}</NuxtLink>
+      </div>
+
+      <Divider transparent/>
+      <div class="category">
+        <h2 class="category-title">{{ $t('pages.landing.categories.tool.title')}}</h2>
+        <p class="category-subtitle">{{ $t('pages.landing.categories.tool.subtitle')}}</p>
+        <p class="category-body">{{ $t('pages.landing.categories.tool.body') }}</p>
+        <div class="image-container">
+          <img :src="tool_picture" class="image"/>
         </div>
-        <NuxtLink
-          class="button button--blue"
-          :to="localePath('/benefits')"
-        >
-          {{ $t('cta.benefits') }}
-        </NuxtLink>
-        <Divider />
-        <h4 class="category-title title">
-          {{ $t('pages.landing.categories.method.title') }}
-        </h4>
-        <div id="method-steps">
-          <div
-            v-for="(item, index) in $t('pages.method.items')"
-            :key="index"
-            class="step"
-          >
-            <h4 class="item-title title">
-              {{ item.title }}
-            </h4>
-            <i :class="item.icon" />
-          </div>
+        <NuxtLink class="button button--blue" :to="localePath('/tool')">{{ $t('cta.learn-more') }}</NuxtLink>
+      </div>
+
+      <Divider transparent/>
+      <div class="category">
+        <h2 class="category-title">{{ $t('pages.landing.categories.use-case.title')}}</h2>
+        <p class="category-subtitle">{{ $t('pages.landing.categories.use-case.subtitle')}}</p>
+        <p class="category-body">{{ $t('pages.landing.categories.use-case.body') }}</p>
+        <div class="image-container">
+          <img :src="use_case_picture" class="image"/>
         </div>
-        <NuxtLink
-          class="button button--blue"
-          :to="localePath('/method')"
-        >
-          {{ $t('cta.method') }}
-        </NuxtLink>
+        <NuxtLink class="button button--blue" :to="localePath('/use-case')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
-      <Divider />
-      <div class="category category-tool">
-        <h4 class="category-title title">
-          {{ $t('pages.landing.categories.tool.title') }}
-        </h4>
-        <ImageTextDisplay
-          :title="$t('pages.landing.categories.tool.subtitle')"
-          :subtitle="$t('pages.landing.categories.tool.body')"
-          :image="tool_picture"
-          class="index-imagetext"
-          title-size-px="26"
-          subtitle-size-px="20"
-        />
-        <NuxtLink
-          class="button button--blue"
-          :to="localePath('/tool')"
-        >
-          {{ $t('cta.tool') }}
-        </NuxtLink>
-      </div>
-      <Divider />
-      <div class="category category-use-case">
-        <h1 class="category-title title">
-          {{ $t('pages.landing.categories.use-case.title') }}
-        </h1>
-        <ImageTextDisplay
-          :title="$t('pages.landing.categories.use-case.subtitle')"
-          :subtitle="$t('pages.landing.categories.use-case.body')"
-          :image="use_case_picture"
-          class="index-imagetext"
-          title-size-px="26"
-          subtitle-size-px="20"
-        />
-        <NuxtLink
-          class="button button--blue"
-          :to="localePath('/use-case-facom')"
-        >
-          {{ $t('cta.discover') }}
-        </NuxtLink>
-      </div>
+
     </div>
   </div>
 </template>
@@ -104,9 +71,6 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
-      /* @ts-ignore */
-      body_text: this.$root.context.app.i18n.t('pages.landing.body'),
-      main_picture: require('@/assets/img/landing.jpg'),
       tool_picture: require('@/assets/img/tools/1.jpg'),
       use_case_picture: require('@/assets/img/facom.png')
     }
@@ -117,33 +81,31 @@ export default Vue.extend({
 <style scoped>
 
 #page-top-full {
-  background-color: var(--color-digitalce-blue);
-  color: var(--color-white);
+  background-color: var(--color-grey);
+  padding: 0 3%;
 }
 
-.main-img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+#blue-container {
+  background-color: var(--color-digitalce-blue-darker);
+  color: var(--color-white);
+  margin: auto;
+  padding: 10rem 1rem;
 }
+
 
 .category-title {
   margin-bottom: 3rem;
+  text-align: center;
+  color: var(--color-digitalce-blue);
 }
 
-.feedback {
-  margin-top: 2rem;
+.category-subtitle {
+  font-size: 17px;
+}
+
+.category-subtitle, .category-body {
+  text-align: center;
   margin-bottom: 2rem;
-}
-
-.feedback-quote {
-  text-align: left;
-}
-
-.feedback-signature {
-  margin-top: 1rem;
-  text-align: right;
-  font-style: italic;
 }
 
 #method-steps {
@@ -158,8 +120,14 @@ export default Vue.extend({
   margin-bottom: 1rem;
 }
 
-.index-imagetext {
+.image-container {
   margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.image {
+  max-width: 500px;
 }
 
 button {
@@ -168,8 +136,12 @@ button {
 }
 
 @media screen and (max-width: 9000px) {
-  .feedback {
-    font-size: 22px;
+  #blue-container {
+    padding: 10rem 1rem;
+  }
+
+  #blue-inner-container {
+    width: 75%;
   }
 
   #method-steps {
@@ -182,23 +154,37 @@ button {
     margin: 0 1.3rem;
     padding: 1rem 0.5rem;
   }
+
+  .category {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  .feedback {
-    font-size: 20px;
+  #blue-container {
+    padding: 5rem 1rem;
+  }
+
+  #blue-inner-container {
+    width: 90%;
   }
 
   #method-steps {
     width: auto;
   }
+
+  .category {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  .feedback {
-    font-size: 18px;
+  .category {
+    padding-left: 0;
+    padding-right: 0;
   }
-
   .step {
     display: block;
     font-size: 20px;
