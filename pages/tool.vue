@@ -1,27 +1,24 @@
 <template>
-  <div id="main-content">
-    <h2 class="page-title title">
-      {{ $t('pages.tool.title') }}
-    </h2>
-    <div class="tool-items">
-      <ImageTextDisplay
-        v-for="(item, index) in $t('pages.tool.items')"
-        :key="index"
-        :title="item.title"
-        :body-text="item.body"
-        :image="pictures[index]"
-        :image-clickable="true"
-        :title-size-px="24"
-        :subtitle-size-px="16"
-        class="tool-item"
-      />
+  <div>
+    <BlueBox
+      :title="$t('pages.tool.title')"
+      :subtitle="$t('pages.tool.subtitle')"
+      :body="$t('pages.tool.body')"
+    />
+
+    <div id="main-content">
+      <div class="tool-items">
+        <ImageTextDisplay
+          v-for="(item, index) in $t('pages.tool.items')"
+          :key="index"
+          :title="item.title"
+          :body-text="item.body"
+          :image="pictures[index]"
+          :image-clickable="true"
+          class="tool-item"
+        />
+      </div>
     </div>
-    <NuxtLink
-      class="button button--blue"
-      :to="localePath('/use-case')"
-    >
-      {{ $t('cta.use-case') }}
-    </NuxtLink>
   </div>
 </template>
 

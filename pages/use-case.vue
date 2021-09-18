@@ -3,7 +3,7 @@
     <h2 class="page-title title">
       {{ $t('pages.use-case.title') }}
     </h2>
-    <h4 class="page-subtitle" v-html="body_text" />
+    <h4 class="page-subtitle" v-html="page_subtitle" />
 
     <div class="use-case-group">
       <div
@@ -38,7 +38,7 @@ export default Vue.extend({
   data () {
     return {
       /* @ts-ignore */
-      body_text: this.$root.context.app.i18n.t('pages.use-case.body'),
+      page_subtitle: this.$root.context.app.i18n.t('pages.use-case.subtitle'),
       /* @ts-ignore */
       cta_pre_text: this.$root.context.app.i18n.t('pages.use-case.facom-pre-cta'),
       /* @ts-ignore */

@@ -5,8 +5,8 @@
       :subtitle="$t('pages.landing.subtitle')"
       :body="$t('pages.landing.body')"
     />
-    <div id="main-content">
 
+    <div id="main-content">
       <div class="category">
         <h2 class="category-title">{{ $t('pages.landing.categories.work.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.work.subtitle')}}</p>

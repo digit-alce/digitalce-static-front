@@ -6,7 +6,7 @@
         class="imagetext-img"
         :src="image"
       >
-      <a v-if="image && imageClickable" :href="image" target="_blank">
+      <a v-if="image && imageClickable" class="img-link" :href="image" target="_blank">
         <img class="imagetext-img" :src="image">
       </a>
       <div class="imagetext-right-content">
@@ -94,13 +94,18 @@ export default Vue.extend({
   width: 100%;
 }
 
-.imagetext-right-content {
-  width: 100%;
-}
 
 .imagetext i {
   margin-top: 1rem;
   font-size: 50px;
+}
+
+.img-link {
+  background: var(--color-grey)
+}
+
+.imagetext-img {
+  opacity: 0.5;
 }
 
 .imagetext-title, .imagetext-subtitle {
@@ -108,8 +113,8 @@ export default Vue.extend({
 }
 
 .imagetext-body {
-  margin-top: 1rem;
   color: var(--color-black);
+  line-height: 1.8;
 }
 
 .imagetext-body.bottom {
@@ -120,9 +125,14 @@ export default Vue.extend({
   .imagetext-top-content {
     display: flex;
   }
+
   .imagetext-img {
     width: var(--image-width);
-    padding-right: 2rem;
+  }
+
+  .imagetext-right-content {
+    width: 100%;
+    padding-left: 5rem;
   }
 }
 
@@ -130,8 +140,15 @@ export default Vue.extend({
   .imagetext-top-content {
     display: block;
   }
+
+  .imagetext-right-content {
+    width: unset;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
   .imagetext-img {
-    max-width: 500px;
     width: 100%;
     padding-right: 0;
   }

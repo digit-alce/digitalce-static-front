@@ -180,6 +180,8 @@ export default {
                 },
                 tool: {
                   title: 'Innov&Scale® 2.0',
+                  subtitle: 'A unique innovation management web app that ensures the success of your digital transformation thanks to our registered method.',
+                  body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the Innov&Scale method.',
                   items: [
                     {
                       title: 'Quick and easy innovation project visualisation',
@@ -201,7 +203,7 @@ export default {
                 },
                 'use-case': {
                   title: 'Use Case',
-                  body: 'Discover use cases examples of the implementation of the Innov&Scale® method within different fields and organization',
+                  subtitle: 'Discover use cases examples of the implementation of the Innov&Scale® method within different fields and organization',
                   'facom-pre-cta': 'Discover FACOM\'s<br/>Innov&Scale® experience',
                   items: [
                     {
@@ -292,10 +294,6 @@ export default {
                     }
                   ]
                 },
-                contact: {
-                  title: 'Contact',
-                  body: 'Interested in this method? Need more information?<br/><br/>Please, feel free to contact us at <a href="mailto:contact@digitalce.fr">contact@digitalce.fr</a><br/><br/>We\'ll come back to you shortly.'
-                }
               }
             },
             fr: {
@@ -425,6 +423,8 @@ export default {
                 },
                 tool: {
                   title: 'Innov&Scale® 2.0',
+                  subtitle: 'A unique innovation management web app that ensures the success of your digital transformation thanks to our registered method.',
+                  body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the Innov&Scale method.',
                   items: [
                     {
                       title: 'Visualisation simple et rapide du projet d\'innovation',
@@ -446,7 +446,7 @@ export default {
                 },
                 'use-case': {
                   title: 'Cas d\'usage',
-                  body: 'Découvrez des exemples de cas d\'usage de la méthode Innov&Scale® dans différents domaines et organisations',
+                  subtitle: 'Découvrez des exemples de cas d\'usage de la méthode Innov&Scale® dans différents domaines et organisations',
                   'facom-pre-cta': 'Découvrez l\'expérience<br/>FACOM Innov&Scale®',
                   items: [
                     {
