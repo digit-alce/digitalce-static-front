@@ -225,8 +225,8 @@ export default {
                 },
                 'use-case-facom': {
                   title: 'Use Case FACOM',
-                  'subtitle-big': 'Facom Lifetime Guarantee: Simpler, Faster And Greener',
-                  'subtitle-small': 'How did we reshape lifetime guarantee with Innov&Scale®?',
+                  subtitle: 'Facom Lifetime Guarantee: Simpler, Faster And Greener',
+                  body: 'How did we reshape lifetime guarantee with Innov&Scale®?',
                   items: [
                     {
                       title: 'Envision',
@@ -459,8 +459,8 @@ export default {
                 },
                 'use-case-facom': {
                   title: 'Cas d\'usage FACOM',
-                  'subtitle-big': 'La garantie à vie facom: plus simple, plus rapide, plus verte',
-                  'subtitle-small': 'Comment avons-nous remodelé la garantie à vie FACOM avec Innov&Scale®?',
+                  subtitle: 'La garantie à vie facom: plus simple, plus rapide, plus verte',
+                  body: 'Comment avons-nous remodelé la garantie à vie FACOM avec Innov&Scale®?',
                   items: [
                     {
                       title: 'Envisager',

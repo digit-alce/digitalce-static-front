@@ -35,41 +35,39 @@
       </div>
     </div>
 
-    <transition name="fade">
-      <div id="slide-menu-container" class="menu-toggle">
-        <ul id="slide-menu">
-          <NuxtLink class="link" :to="localePath('/benefits')">
-            <li @click="closeMenu()">{{ $t('path.benefits') }}</li>
-          </NuxtLink>
-          <NuxtLink class="link" :to="localePath('/method')">
-            <li @click="closeMenu()">{{ $t('path.method') }}</li>
-          </NuxtLink>
-          <NuxtLink class="link" :to="localePath('/tool')">
-            <li @click="closeMenu()">{{ $t('path.tool') }}</li>
-          </NuxtLink>
-          <NuxtLink class="link" :to="localePath('/use-case')">
-            <li @click="closeMenu()">{{ $t('path.use-case') }}</li>
-          </NuxtLink>
-          <NuxtLink class="link" :to="localePath('/services')">
-            <li @click="closeMenu()">{{ $t('path.services') }}</li>
-          </NuxtLink>
-          <button id="contact-button" class="link button--blue"
-            to="mailto:contact@digitalce.fr?subject=Hello%20Digitalce">
-            {{ $t('cta.contact') }}
-          </button>
-          <NuxtLink v-if="$i18n.locale !== 'fr'" :to="switchLocalePath('fr')" class="link flag">
-            <li>
-              <img src="@/assets/img/flags/fr.png">
-            </li>
-          </NuxtLink>
-          <NuxtLink v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" class="link flag">
-            <li>
-              <img src="@/assets/img/flags/en.png">
-            </li>
-          </NuxtLink>
-        </ul>
-      </div>
-    </transition>
+    <div id="slide-menu-container" class="menu-toggle">
+      <ul id="slide-menu">
+        <NuxtLink class="link" :to="localePath('/benefits')">
+          <li @click="closeMenu()">{{ $t('path.benefits') }}</li>
+        </NuxtLink>
+        <NuxtLink class="link" :to="localePath('/method')">
+          <li @click="closeMenu()">{{ $t('path.method') }}</li>
+        </NuxtLink>
+        <NuxtLink class="link" :to="localePath('/tool')">
+          <li @click="closeMenu()">{{ $t('path.tool') }}</li>
+        </NuxtLink>
+        <NuxtLink class="link" :to="localePath('/use-case')">
+          <li @click="closeMenu()">{{ $t('path.use-case') }}</li>
+        </NuxtLink>
+        <NuxtLink class="link" :to="localePath('/services')">
+          <li @click="closeMenu()">{{ $t('path.services') }}</li>
+        </NuxtLink>
+        <button id="contact-button" class="link button--blue"
+          to="mailto:contact@digitalce.fr?subject=Hello%20Digitalce">
+          {{ $t('cta.contact') }}
+        </button>
+        <NuxtLink v-if="$i18n.locale !== 'fr'" :to="switchLocalePath('fr')" class="link flag">
+          <li>
+            <img src="@/assets/img/flags/fr.png">
+          </li>
+        </NuxtLink>
+        <NuxtLink v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" class="link flag">
+          <li>
+            <img src="@/assets/img/flags/en.png">
+          </li>
+        </NuxtLink>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -83,8 +81,10 @@ export default Vue.extend({
       if (!element) {
         return;
       }
-      element.style.visibility = event.target.checked ? 'visible' : 'hidden';
-      element.style.opacity = event.target.checked ? '1' : '0';
+      const is_checked = event.target.checked;
+      element.style.visibility = is_checked ? 'visible' : 'hidden';
+      element.style.opacity = is_checked ? '1' : '0';
+      element.style.transform = is_checked ? 'translateY(0px)' : 'translateY(30px)' ;
     },
     closeMenu () {
       const toggleButton = document.getElementById('toggle-box')
@@ -99,7 +99,6 @@ export default Vue.extend({
   position: fixed;
   top: 0;
   width: 100%;
-  height: 120px;
   box-shadow: 0px 0px 3px var(--color-grey);
   background-color: var(--color-white);
   z-index: 10;
@@ -119,7 +118,6 @@ export default Vue.extend({
 
 #nav-logo img {
   margin-left: 30px;
-  height: 120px;
   vertical-align: middle;
 }
 
@@ -132,12 +130,26 @@ a {
 }
 
 #slide-menu-container {
-  transition: 400ms;
+  transition: all .4s ease;
   visibility: hidden;
   opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
 }
 
 @media screen and (max-width: 9000px) {
+  #navbar {
+    height: 120px;
+  }
+
+  #nav-logo img {
+    height: 120px;
+  }
+
   #burger-menu {
     display: none;
   }
@@ -183,13 +195,14 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+  #navbar {
+    height: 80px;
+  }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+  #nav-logo img {
+    height: 80px;
+  }
+
 
   #nav-links {
     display: none;
@@ -259,13 +272,8 @@ a {
   }
 
   #slide-menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-  }
+    transform: translateY(30px);
+}
 
   #slide-menu
   {

@@ -40,7 +40,6 @@ export default Vue.extend({
 <style scoped>
 
 #page-top-full {
-  background-color: var(--color-grey);
   padding: 0 3%;
 }
 
@@ -52,6 +51,10 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 9000px) {
+  #page-top-full {
+    padding: 0 3%;
+  }
+
   #blue-container {
     padding: 10rem 1rem;
   }
@@ -71,4 +74,9 @@ export default Vue.extend({
   }
 }
 
+@media screen and (max-width: 700px) {
+  #page-top-full {
+    padding: 0;
+  }
+}
 </style>

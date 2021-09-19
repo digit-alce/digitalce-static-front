@@ -65,13 +65,6 @@ img {
   transform: translateZ(0);
 }
 
-#wrapper {
-  min-height: calc(100vh - 75px);
-  padding-top: 119px;
-  display: flex;
-  flex-direction: column;
-}
-
 #main-content {
   flex: 1;
   width: 90%;
@@ -127,8 +120,6 @@ button, .button {
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .no-border {
@@ -136,6 +127,10 @@ button, .button {
 }
 
 @media screen and (max-width: 9000px) {
+  #wrapper {
+    padding-top: 119px;
+  }
+
   .column-1 {
     grid-column: 1;
   }
@@ -150,6 +145,39 @@ button, .button {
 }
 
 @media screen and (max-width: 900px) {
+  html {
+      scrollbar-width: none; /* For Firefox */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+
+  html::-webkit-scrollbar {
+      width: 0px; /* For Chrome, Safari, and Opera */
+  }
+
+  #wrapper {
+    padding-top: 79px;
+  }
+
+
+  .column-1 {
+    grid-column: 1;
+  }
+
+  .column-2 {
+    grid-column: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
+
   .column-1 {
     grid-column: 1;
   }
@@ -162,5 +190,4 @@ button, .button {
     grid-column: 1;
   }
 }
-
 </style>

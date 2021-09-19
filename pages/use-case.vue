@@ -10,7 +10,7 @@
         v-for="(item, index) in cases"
         :key="index"
         class="use-case-item"
-        :class="getGridColumnClass(index, 3)"
+        :class="getGridColumnClass(index)"
       >
         <img class="use-case-img" :src="pictures[index]">
         <h4 class="use-case-title title">
@@ -37,6 +37,7 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
+      client_width: document.body.clientWidth,
       /* @ts-ignore */
       page_subtitle: this.$root.context.app.i18n.t('pages.use-case.subtitle'),
       /* @ts-ignore */
@@ -53,11 +54,27 @@ export default Vue.extend({
       ]
     }
   },
+  created() {
+    window.addEventListener("resize", this.onResizeChange);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.onResizeChange);
+  },
   computed: {
-    /* @ts-ignore */
-    cases () { return this.items },
+    cases () {
+      /* @ts-ignore */
+      return this.items
+    },
+    getModulo () {
+      /* @ts-ignore */
+      const width = this.client_width;
+      return width >= 900 ? 3 : width >= 500 ? 2 : 1;
+    }
   },
   methods: {
+    onResizeChange() {
+      return document.body.clientWidth;
+    },
     getGridColumnClass (index: number, modulo: number) {
       return 'column-' + ((index + 1) % modulo || modulo)
     }
@@ -101,8 +118,13 @@ export default Vue.extend({
 
 @media screen and (max-width: 900px) {
   .use-case-group {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media screen and (max-width: 500px) {
+  .use-case-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

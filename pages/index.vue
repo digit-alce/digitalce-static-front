@@ -109,7 +109,7 @@ export default Vue.extend({
 }
 
 .image {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 button {
