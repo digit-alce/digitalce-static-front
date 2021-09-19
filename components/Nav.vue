@@ -15,8 +15,8 @@
         <NuxtLink class="link" :to="localePath('/services')">{{ $t('path.services') }}</NuxtLink>
 
         <button id="contact-button" class="link button--blue"
-          to="mailto:contact@digitalce.fr?subject=Hello%20Digitalce">
-          {{ $t('cta.contact') }}
+          onclick="window.open('mailto:contact@digitalce.fr?subject=Hello%20Digitalce', '_blank')">
+            {{ $t('cta.contact') }}
         </button>
         <!--
           Country flags made by Freepik (https://www.freepik.com/)
@@ -36,37 +36,39 @@
     </div>
 
     <div id="slide-menu-container" class="menu-toggle">
-      <ul id="slide-menu">
+      <div id="slide-menu">
         <NuxtLink class="link" :to="localePath('/benefits')">
-          <li @click="closeMenu()">{{ $t('path.benefits') }}</li>
+          <span @click="closeMenu()">{{ $t('path.benefits') }}</span>
         </NuxtLink>
         <NuxtLink class="link" :to="localePath('/method')">
-          <li @click="closeMenu()">{{ $t('path.method') }}</li>
+          <span @click="closeMenu()">{{ $t('path.method') }}</span>
         </NuxtLink>
         <NuxtLink class="link" :to="localePath('/tool')">
-          <li @click="closeMenu()">{{ $t('path.tool') }}</li>
+          <span @click="closeMenu()">{{ $t('path.tool') }}</span>
         </NuxtLink>
         <NuxtLink class="link" :to="localePath('/use-case')">
-          <li @click="closeMenu()">{{ $t('path.use-case') }}</li>
+          <span @click="closeMenu()">{{ $t('path.use-case') }}</span>
         </NuxtLink>
         <NuxtLink class="link" :to="localePath('/services')">
-          <li @click="closeMenu()">{{ $t('path.services') }}</li>
+          <span @click="closeMenu()">{{ $t('path.services') }}</span>
         </NuxtLink>
-        <button id="contact-button" class="link button--blue"
-          to="mailto:contact@digitalce.fr?subject=Hello%20Digitalce">
-          {{ $t('cta.contact') }}
-        </button>
         <NuxtLink v-if="$i18n.locale !== 'fr'" :to="switchLocalePath('fr')" class="link flag">
-          <li>
+          <span>
             <img src="@/assets/img/flags/fr.png">
-          </li>
+          </span>
         </NuxtLink>
         <NuxtLink v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')" class="link flag">
-          <li>
+          <span>
             <img src="@/assets/img/flags/en.png">
-          </li>
+          </span>
         </NuxtLink>
-      </ul>
+      </div>
+      <div id="contact-btn-container">
+        <button id="contact-button" class="button--blue"
+          onclick="window.open('mailto:contact@digitalce.fr?subject=Hello%20Digitalce', '_blank')">
+            {{ $t('cta.contact') }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -125,10 +127,6 @@ a {
   text-decoration: none;
 }
 
-.nuxt-link-active:not(.flag) {
-  border-bottom: 1px solid var(--color-black);
-}
-
 #slide-menu-container {
   transition: all .4s ease;
   visibility: hidden;
@@ -154,6 +152,10 @@ a {
     display: none;
   }
 
+  .nuxt-link-active:not(.flag) {
+    border-bottom: 1px solid var(--color-black);
+  }
+
   #nav-links {
     float: right;
     height: 100%;
@@ -166,7 +168,7 @@ a {
     margin-left: 10px;
   }
 
-  #navbar #contact-button {
+  #contact-button {
     text-decoration: none;
     text-align: center;
     width: 100px;
@@ -180,7 +182,7 @@ a {
 
   .link:not(.img) {
     position: relative;
-    line-height: 31px
+    line-height: 31px;
   }
 
   a {
@@ -203,9 +205,26 @@ a {
     height: 80px;
   }
 
+  .nuxt-link-active:not(.flag) {
+    border-bottom: 1px solid transparent;
+  }
 
   #nav-links {
     display: none;
+  }
+
+  .link {
+    font-size: 8vmin;
+    font-weight: 200;
+    margin: 4vw 5vw;
+    transform: translateY(0);
+  }
+
+  .link:not(.img) {
+    position: initial;
+    line-height: unset;
+    display: block;
+    text-align: center;
   }
 
   #burger-menu {
@@ -222,8 +241,7 @@ a {
     font-size: 30px;
   }
 
-  #burger-menu input
-  {
+  #burger-menu input {
     position: absolute;
     width: 33px;
     height: 33px;
@@ -233,8 +251,7 @@ a {
     -webkit-touch-callout: none;
   }
 
-  #burger-menu span
-  {
+  #burger-menu span {
     display: block;
     width: 33px;
     height: 1px;
@@ -249,50 +266,50 @@ a {
                 opacity 0.55s ease;
   }
 
-  #burger-menu span:first-child
-  {
+  #burger-menu span:first-child {
     transform-origin: 0% 0%;
   }
 
-  #burger-menu span:nth-last-child(2)
-  {
+  #burger-menu span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
-  #burger-menu input:checked ~ span
-  {
+  #burger-menu input:checked ~ span {
     opacity: 1;
     background: var(--color-black);
     transform: rotate(-45deg) translate(-3px, 5px);
   }
 
-  #burger-menu input:checked ~ span:nth-last-child(2)
-  {
+  #burger-menu input:checked ~ span:nth-last-child(2) {
     transform: rotate(45deg) translate(-3px, -5px);
   }
 
   #slide-menu-container {
+    background: var(--color-white);
     transform: translateY(30px);
+    display: flex;
+    flex-direction: column;
 }
 
-  #slide-menu
-  {
-    position: absolute;
+  #slide-menu {
     width: 100%;
-    height: 100%;
-    background: var(--color-white);
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  #slide-menu li
-  {
-    font-size: 22px;
+  #contact-btn-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
 
-  #burger-menu input:checked ~ ul
-  {
-    transform: none;
+  #contact-button {
+    width: 50%;
+    max-width: 200px;
+    font-size: 1.2rem;
+    margin: 4vw 6vw 6vw;
+    padding: 1.2rem 0;
   }
 
   .flag img {

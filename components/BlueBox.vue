@@ -41,6 +41,7 @@ export default Vue.extend({
 
 #page-top-full {
   padding: 0 3%;
+  background: var(--color-grey);
 }
 
 #blue-container {

@@ -3,7 +3,7 @@
     <div id="left-footer-links">
       <ul>
         <li class="title">
-          DIGIT ALCE
+          Digit Alce
         </li>
         <li>
           Paris, France
@@ -19,13 +19,13 @@
         <i class="fab fa-linkedin " />
       </a>
       <ul>
-        <li id="copyright-dynamic-date">
+        <li id="copyright">
           <script>
             const currentYear = new Date().getFullYear()
             const copyrightDate = currentYear === 2021
             ? '2021'
             : `2021 - ${currentYear}`
-            const copyright = `© ${copyrightDate} digit alce`
+            const copyright = `© ${copyrightDate} Digit alce`
             document.getElementById("copyright-dynamic-date").innerHTML = copyright
           </script>
         </li>
@@ -47,6 +47,7 @@ export default Vue.extend({})
   padding-top: 19px;
   background-color: var(--color-grey);
   padding-bottom: 1rem;
+  display: inline-block;
 }
 
 .linkedin-logo {
@@ -75,6 +76,10 @@ ul{
 
 li {
   margin: 0 0 20px 0;
+}
+
+#copyright {
+  font-size: 0.7rem;;
 }
 
 </style>
