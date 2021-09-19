@@ -50,7 +50,6 @@ export default Vue.extend({
 
 .cta-pre-text {
   font-size: 17px;
-  margin-bottom: 2rem;
   text-align: center;
 }
 

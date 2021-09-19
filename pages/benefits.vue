@@ -10,18 +10,12 @@
         class="item benefit"
         :class="getGridColumnClass(index, 3)"
       >
-        <h4 class="text-item-title title underline">
+        <h4 class="text-item-title title">
           {{ item.title }}
         </h4>
         <p class="text-item-body" v-html="item.body"/>
       </div>
     </div>
-    <NuxtLink
-      class="button button--blue"
-      :to="localePath('/method')"
-    >
-      {{ $t('cta.method') }}
-    </NuxtLink>
   </div>
 </template>
 
@@ -38,15 +32,14 @@ export default Vue.extend({
 
 <style scoped>
 
-.benefit {
-  text-align: center;
-}
-
 #benefits  {
-  text-align: justify;
-  margin-bottom: 75px;
   display: grid;
   grid-gap: 45px;
+}
+
+.text-item-title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 9000px) {
@@ -55,7 +48,7 @@ export default Vue.extend({
   }
 
   .text-item-body {
-    text-align: center;
+    line-height: 1.8;
   }
 }
 

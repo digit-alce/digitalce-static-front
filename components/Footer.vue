@@ -3,9 +3,14 @@
     <div id="left-footer-links">
       <ul>
         <li class="title">
-          DIGIT ALCE<br/>France
+          DIGIT ALCE
+        </li>
+        <li>
+          Paris, France
         </li>
       </ul>
+    </div>
+    <div id="right-footer-links">
       <a
         class="linkedin-logo"
         href="https://www.linkedin.com/company/digit-alce/"
@@ -13,8 +18,6 @@
       >
         <i class="fab fa-linkedin " />
       </a>
-    </div>
-    <div id="right-footer-links">
       <ul>
         <li id="copyright-dynamic-date">
           <script>

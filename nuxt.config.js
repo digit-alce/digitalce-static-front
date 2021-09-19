@@ -95,7 +95,7 @@ export default {
                     },
                     benefits: {
                       title: 'Innov&Scale® benefits',
-                      subtitle: '"Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish (...)"',
+                      subtitle: '"Each step must be carried out in order with rigor and perseverance, the Innov&Scale® method allows us to successfully carry out this project from start to finish"',
                       body: '- Yves Antier - VP et GM Tool & Storage France, FACOM Black & Decker'
                     },
                     tool: {
@@ -114,7 +114,7 @@ export default {
                   title: 'About'
                 },
                 benefits: {
-                  title: 'Benefits',
+                  title: 'Innov&Scale® method benefits',
                   items: [
                     {
                       title: 'Vision',
@@ -144,36 +144,27 @@ export default {
                 },
                 method: {
                   title: 'Innov&Scale® Method',
+                  subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
                   body: 'The 5 steps of the Innov&Scale® method guide the digital transformation project towards success, in successive and achievable steps.<br/><br/>The right mix of innovative methods (design thinking, mural...) and legacy methods (change management...) at the right place and the right time. <br/><br/>Each step requires the completion of pre-work to prepare the step, then the completion of a deliverable that formalizes the work accomplished.<br/><br/>Each step feeds the next step and is part of a complete process.<br/><br/>The 5-steps allow the collaborator to follow and share step by step the progress of the digital transformation project towards its realization and the achievement of its objectives.',
                   items: [
                     {
-                      icon: 'far fa-eye',
-                      title: 'Envision',
-                      subtitle: 'Share a unique vision of the innovation project',
+                      title: 'Envision: Share a unique vision of the innovation project',
                       body: 'Through scoping and strategic alignement, generate a common vision of the innovation project and ensure full alignment among stakeholders on objectives, communication and constraints of the project.'
                     },
                     {
-                      icon: 'far fa-lightbulb',
-                      title: 'Co-create',
-                      subtitle: 'Co-create the future solution',
+                      title: 'Co-create: Co-create the future solution',
                       body: 'Through co-creation workshops, co-create with end-users, the envisioned solution using innovative methods and tools.'
                     },
                     {
-                      icon: 'far fa-edit',
-                      title: 'Prepare',
-                      subtitle: 'Prepare solution real testing',
+                      title: 'Prepare: Prepare solution real testing',
                       body: 'Use an agile method to quickly develop the solution and prepare real testing objectives and environment.'
                     },
                     {
-                      icon: 'fas fa-chart-line icon',
-                      title: 'Enhance',
-                      subtitle: 'Enhance the solution and organize scaling',
+                      title: 'Enhance: Enhance the solution and organize scaling',
                       body: 'Use pilot to ensure real-life usage of the new processes and solution. Enable lessons learned to adapt and adjust to real environment.<br/>Create a precise and complete industrialization playbook to prepare and anticipate solution scaling.'
                     },
                     {
-                      icon: 'fas fa-expand-alt',
-                      title: 'Scale',
-                      subtitle: 'Scale the solution',
+                      title: 'Scalee: Scale the solution',
                       body: 'Develop a comprehensive change management organization and process to avoid fallbacks and ensure objective completeness of the innovation.<br/>Prepare post-industrialization environment to integrate project into core enterprise processes.'
                     }
                   ]
@@ -323,8 +314,8 @@ export default {
               pages: {
                 landing: {
                   title: 'Faites de votre transformation digitale un succès',
-		              subtitle: '',
-                  body: '',
+		              subtitle: 'Did you know that only 1 out of 5 companies successfully manage to scale up their innovative projects?',
+                  body: 'The difficulty of successfully scaling up innovation projects is real and prevents companies from sustainably transforming innovation into value and responding to new business opportunities.',
                   categories: {
                     work: {
                       title: 'Our work',
@@ -332,13 +323,13 @@ export default {
                       body: ''
                     },
                     method: {
-                      title: 'Out method',
+                      title: 'Our method',
                       subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
                       body: ''
                     },
                     benefits: {
                       title: 'Innov&Scale® benefits',
-                      subtitle: '"(...) Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin (...)"',
+                      subtitle: '"Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin"',
                       body: 'Yves Antier - Vice président et Directeur général de FACOM, groupe Stanley Black & Decker'
                     },
                     tool: {
@@ -387,36 +378,27 @@ export default {
                 },
                 method: {
                   title: 'La méthode Innov&Scale®',
+                  subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
                   body: 'Les 5 étapes de la méthode Innov&Scale® guident le projet de transformation digitale vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale® est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
                   items: [
                     {
-                      icon: 'far fa-eye',
-                      title: 'Envisager',
-                      subtitle: 'Partager une vision unique du projet d\'innovation',
+                      title: 'Envisager: Partager une vision unique du projet d\'innovation',
                       body: 'A travers le cadrage et l\'alignement stratégique, créez une vision unique du projet d\'innovation et garantissez un alignement complet des parties prenantes sur les objectifs, la communication, et les contraintes du projet.'
                     },
                     {
-                      icon: 'far fa-lightbulb',
-                      title: 'Co-créer',
-                      subtitle: 'Co-créer la future solution',
+                      title: 'Co-créer: Co-créer la future solution',
                       body: 'A travers l\'atelier de co-création, co-créez avec les utilisateurs finaux, la solution envisagée en utilisant des méthodes et outils innovants.'
                     },
                     {
-                      icon: 'far fa-edit',
-                      title: 'Préparer',
-                      subtitle: 'Préparer le pilote de la solution',
+                      title: 'Préparer: Préparer le pilote de la solution',
                       body: 'Utilisez une méthode agile pour développer rapidement la solution et préparez les objectifs et l\'environnement du pilote.'
                     },
                     {
-                      icon: 'fas fa-chart-line icon',
-                      title: 'Affiner',
-                      subtitle: 'Affiner la solution et organiser l\'industrialisation',
+                      title: 'Affiner: Affiner la solution et organiser l\'industrialisation',
                       body: 'Réalisez un pilote pour garantir l\'utilisation réelle des nouveaux processus et de la nouvelle solution. Tirez les leçons de l\'expérience pour ajuster votre solution à son environnement. Créez un dossier d\'industrialisation précis et complet pour préparer et anticiper la mise à l\'échelle de la solution.'
                     },
                     {
-                      icon: 'fas fa-expand-alt',
-                      title: 'Industrialiser',
-                      subtitle: 'Industrialiser la solution',
+                      title: 'Industrialiser: Industrialiser la solution',
                       body: 'Développez une organisation et un processus complet de gestion du changement afin d\'éviter les écueils et de garantir l\'atteinte des objectifs du projet d\'innovation. Préparez l\'environnement post-industrialisation pour intégrer le projet dans les processus de base de l\'entreprise.'
                     }
                   ]

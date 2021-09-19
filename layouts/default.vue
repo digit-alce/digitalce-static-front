@@ -36,8 +36,11 @@ html, body, #__nuxt, #__layout {
   background-color: var(--color-white)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: SecondaryFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
@@ -71,12 +74,13 @@ img {
 
 #main-content {
   flex: 1;
-  margin: 50px 4vw;
   width: 90%;
   max-width: 1000px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 6rem;
 }
 
 .max-width {
@@ -123,23 +127,8 @@ button, .button {
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
-  z-index: 1;
   margin-left: auto;
   margin-right: auto;
-}
-
-.underline:after {
-  border-bottom: 6px solid var(--color-digitalce-blue);
-  opacity: 0.5;
-  content:"";
-  margin: 0 auto;
-  position: absolute;
-  top: 50%; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-}
-
-.text-item-body {
-  padding: 10px 20px;
 }
 
 .no-border {

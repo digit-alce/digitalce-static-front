@@ -17,7 +17,7 @@
         :key="index"
         class="item use-case"
       >
-        <h1 class="text-item-title title underline">
+        <h1 class="text-item-title title">
           {{ item.title }}
         </h1>
         <p class="text-item-body" v-html="item.body"/>
