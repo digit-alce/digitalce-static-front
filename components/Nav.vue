@@ -119,7 +119,7 @@ export default Vue.extend({
  }
 
 #nav-logo img {
-  margin-left: 30px;
+  margin-left: 10px;
   vertical-align: middle;
 }
 

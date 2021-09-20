@@ -8,7 +8,6 @@
       >
       <a v-if="image && imageClickable"
         class="img-link"
-        :class="imageGreyed ? 'greyed' : ''"
         :href="image" target="_blank">
         <img class="imagetext-img clickable" :src="image">
       </a>
@@ -62,10 +61,6 @@ export default Vue.extend({
       type: Boolean,
       default: false
     },
-    imageGreyed: {
-      type: Boolean,
-      default: false
-    },
     icon: {
       type: String,
       default: ''
@@ -106,14 +101,6 @@ export default Vue.extend({
 .imagetext i {
   margin-top: 1rem;
   font-size: 50px;
-}
-
-.img-link.greyed {
-  background: var(--color-grey)
-}
-
-.img-link.greyed .imagetext-img {
-  opacity: 0.5;
 }
 
 .imagetext-subtitle {

@@ -16,7 +16,6 @@
           :image="pictures[index]"
           :image-clickable="true"
           class="tool-item"
-          imageGreyed
         />
       </div>
     </div>

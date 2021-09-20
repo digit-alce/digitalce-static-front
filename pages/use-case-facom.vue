@@ -27,12 +27,6 @@
           {{ $t('pages.use-case-facom.testimony.body') }}
         </div>
       </div>
-      <NuxtLink
-        class="button button--blue"
-        :to="localePath('/services')"
-      >
-        {{ $t('cta.services') }}
-      </NuxtLink>
       <div class="img-container facom-logo">
         <img src="@/assets/img/facom-logo.png">
       </div>
@@ -80,6 +74,11 @@ export default Vue.extend({
   margin-bottom: 2rem;
 }
 
+.text-item-body, .testimony-body {
+  text-align: justify;
+  line-height: 1.8;
+}
+
 .testimony-body {
   text-align: justify;
   padding: 25px;
@@ -92,6 +91,7 @@ export default Vue.extend({
 
 .facom-logo img {
   width: inherit;
+  max-width: 500px;
 }
 
 @media screen and (max-width: 9000px) {

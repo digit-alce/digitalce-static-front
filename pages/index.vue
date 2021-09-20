@@ -18,6 +18,14 @@
         <h2 class="category-title">{{ $t('pages.landing.categories.method.title')}}</h2>
         <p class="category-subtitle">{{ $t('pages.landing.categories.method.subtitle')}}</p>
         <p class="category-body">{{ $t('pages.landing.categories.method.body') }}</p>
+        <div id="method-icons-container">
+          <div v-for="(icon, index) in icons" :key="index" class="method-icon">
+            <img class="method-icon-img" :src="icons_paths[index]">
+            <h4 class="method-icon-title title">
+              {{ icon }}
+            </h4>
+          </div>
+        </div>
         <NuxtLink class="button button--blue" :to="localePath('/method')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
 
@@ -61,9 +69,24 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
+      /* @ts-ignore */
+      icons: this.$root.context.app.i18n.t('pages.landing.categories.method.icons'),
       tool_picture: require('@/assets/img/tools/1.jpg'),
-      use_case_picture: require('@/assets/img/facom.png')
+      use_case_picture: require('@/assets/img/facom.png'),
+      icons_paths: [
+        require('@/assets/img/method/1_envision.jpg'),
+        require('@/assets/img/method/2_cocreate.jpg'),
+        require('@/assets/img/method/3_prepare.jpg'),
+        require('@/assets/img/method/4_enhance.jpg'),
+        require('@/assets/img/method/5_scale.jpg'),
+      ]
     }
+  },
+  computed: {
+    icons () {
+      /* @ts-ignore */
+      return this.icons;
+    },
   }
 })
 </script>
@@ -141,6 +164,28 @@ button {
     padding-left: 20%;
     padding-right: 20%;
   }
+
+  #method-icons-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .method-icon {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .method-icon-img {
+    max-width: 5rem;
+    margin: auto;
+  }
+
+  .method-icon-title {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -177,6 +222,30 @@ button {
 
   .step .item-title {
     margin-bottom: auto;
+  }
+
+  #method-icons-container {
+    flex-direction: column;;
+  }
+
+  .method-icon {
+    flex-direction: row;
+    margin: auto
+  }
+
+  .method-icon:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+
+  .method-icon-img {
+    max-width: 5rem;
+    margin: 0 2rem 0 4rem;
+  }
+
+  .method-icon-title {
+    margin: auto 0;
+    min-width: 120px;
+    text-align: left;
   }
 }
 

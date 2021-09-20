@@ -41,7 +41,7 @@ export default Vue.extend({
 
 #page-top-full {
   padding: 0 3%;
-  background: var(--color-grey);
+  background-color: var(--color-digitalce-blue-darker);
 }
 
 #blue-container {
@@ -59,19 +59,11 @@ export default Vue.extend({
   #blue-container {
     padding: 10rem 1rem;
   }
-
-  #blue-inner-container {
-    width: 75%;
-  }
 }
 
 @media screen and (max-width: 900px) {
   #blue-container {
     padding: 5rem 1rem;
-  }
-
-  #blue-inner-container {
-    width: 90%;
   }
 }
 

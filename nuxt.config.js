@@ -91,7 +91,14 @@ export default {
                     method: {
                       title: 'Our method',
                       subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
-                      body: ''
+                      body: '',
+                      icons: [
+                        'Envision',
+                        'Co-create',
+                        'Prepare',
+                        'Enhance',
+                        'Scale',
+                      ]
                     },
                     benefits: {
                       title: 'Innov&Scale® benefits',
@@ -309,26 +316,34 @@ export default {
                 discover: 'Découvrir',
                 'use-case': 'Cas d\'usage',
                 contact: 'Contact',
-                'click-here': 'Cliquez ici'
+                'click-here': 'Cliquez ici',
+                'learn-more': 'Découvrir'
               },
               pages: {
                 landing: {
                   title: 'Faites de votre transformation digitale un succès',
-		              subtitle: 'Did you know that only 1 out of 5 companies successfully manage to scale up their innovative projects?',
-                  body: 'The difficulty of successfully scaling up innovation projects is real and prevents companies from sustainably transforming innovation into value and responding to new business opportunities.',
+		              subtitle: 'Saviez-vous que seule 1 entreprise sur 5 parvient à concrétiser ses projets d’innovation?',
+                  body: 'La difficulté de réaliser avec succès les projets de transformation digitale est réelle et empêche les entreprises de transformer durablement l’innovation en valeur et de répondre aux nouvelles opportunités commerciales.',
                   categories: {
                     work: {
-                      title: 'Our work',
-                      subtitle: 'At Digit alce, we help companies realize their digital transformation projects from innovation to industrialization, thanks to our Innov&Scale® method, in 5 structured  and achievable steps.',
+                      title: 'Notre valeur',
+                      subtitle: 'Chez Digit alce, nous aidons les entreprises à réaliser leurs projets de transformation digitale, grâce à notre méthode Innov&scale®, en 5 étapes structurées et innovantes.',
                       body: ''
                     },
                     method: {
-                      title: 'Our method',
-                      subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
-                      body: ''
+                      title: 'Notre méthode',
+                      subtitle: 'Une méthode unique et innovante en 5 étapes pour réaliser et mettre à l’échelle vos projets d’innovation.',
+                      body: '',
+                      icons: [
+                        'Envisager',
+                        'Co-créer',
+                        'Préparer',
+                        'Affiner',
+                        'Industrialiser',
+                      ]
                     },
                     benefits: {
-                      title: 'Innov&Scale® benefits',
+                      title: 'Les bénéfices Innov&Scale®',
                       subtitle: '"Chaque étape doit être réalisée dans l\'ordre avec rigueur et persévérance, la méthode Innov&Scale® nous permet de mener à bien ce projet du début à la fin"',
                       body: 'Yves Antier - Vice président et Directeur général de FACOM, groupe Stanley Black & Decker'
                     },
@@ -339,8 +354,8 @@ export default {
                     },
                     'use-case': {
                       title: 'Cas d\'usage',
-                      subtitle: 'Découvrez',
-                      body: 'Découvrez comment la marque d\'outillage FACOM a transformé sa promesse de garantie à vie avec la méthode Innov&Scale®'
+                      subtitle: 'Découvrez comment la marque d\'outillage FACOM a transformé sa promesse de garantie à vie avec la méthode Innov&Scale®',
+                      body: '',
                     }
                   }
                 },
@@ -378,7 +393,7 @@ export default {
                 },
                 method: {
                   title: 'La méthode Innov&Scale®',
-                  subtitle: ' A unique and innovative 5-steps method to successfully create and scale your digital transformations',
+                  subtitle: 'Une méthode unique et innovante en 5 étapes pour réaliser avec succès et mettre à l’échelle vos transformations digitales.',
                   body: 'Les 5 étapes de la méthode Innov&Scale® guident le projet de transformation digitale vers le succès, par étapes successives et réalisables.<br/><br/>La méthode Innov&Scale® est le mélange parfait entre méthodes innovantes (design thinking, mural…) et méthodes traditionnelles (management du changement…) au bon endroit et au bon moment.<br/><br/>Chaque étape nécessite la réalisation d\'un travail préalable, puis la réalisation d\'un livrable qui formalise le travail accompli.<br/><br/>Chaque étape nourrit l\'étape suivante et s\'inscrit dans un processus complet.<br/><br/>Les 5 étapes permettent au collaborateur de suivre et de partager pas à pas l\'avancée du projet de transformation digitale vers sa réalisation et l\'atteinte de ses objectifs.',
                   items: [
                     {
@@ -405,8 +420,8 @@ export default {
                 },
                 tool: {
                   title: 'Innov&Scale® 2.0',
-                  subtitle: 'A unique innovation management web app that ensures the success of your digital transformation thanks to our registered method.',
-                  body: 'Innov&Scale® 2.0 allows you to carry out the digital transformation in real time using the Innov&Scale method.',
+                  subtitle: 'Une web app unique de gestion de projet d’innovation qui garantit le succès de votre projet de transformation digitale grâce à notre méthode déposée.',
+                  body: 'Innov&scale® 2.0 vous permet de réaliser la transformation digitale en temps réel grâce à la méthode Innov&scale®',
                   items: [
                     {
                       title: 'Visualisation simple et rapide du projet d\'innovation',

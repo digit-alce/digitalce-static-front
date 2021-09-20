@@ -5,7 +5,7 @@
         <li class="title">
           Digit Alce
         </li>
-        <li>
+        <li class="subtitle">
           Paris, France
         </li>
       </ul>
