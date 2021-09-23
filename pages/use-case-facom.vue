@@ -1,44 +1,35 @@
 <template>
   <div>
-    <div class="page-title">
-      {{ $t('pages.use-case-facom.title') }}
-    </div>
-    <div class="page-subtitle">
-      <div class="page-subtitle-big">
-        {{ $t('pages.use-case-facom.subtitle-big') }}
-      </div>
-      <div class="page-subtitle-small">
-        {{ $t('pages.use-case-facom.subtitle-small') }}
-      </div>
-    </div>
-    <div id="use-cases">
-      <div
-        v-for="(item, index) in $t('pages.use-case-facom.items')"
-        :key="index"
-        class="item use-case"
-      >
-        <div class="text-item-title underline">
-          {{ item.title }}
+    <BlueBox
+      :title="$t('pages.use-case-facom.title')"
+      :subtitle="$t('pages.use-case-facom.subtitle')"
+      :body="$t('pages.use-case-facom.body')"
+    />
+
+    <div id="main-content">
+      <div id="use-cases">
+        <div
+          v-for="(item, index) in $t('pages.use-case-facom.items')"
+          :key="index"
+          class="item use-case"
+        >
+          <h4 class="text-item-title title">
+            {{ item.title }}
+          </h4>
+          <p class="text-item-body" v-html="item.body"/>
         </div>
-        <p class="text-item-body" v-html="item.body"/>
       </div>
-    </div>
-    <div class="testimony">
-      <div class="testimony-title">
-        {{ $t('pages.use-case-facom.testimony.title') }}
+      <div class="testimony">
+        <h1 class="testimony-title title">
+          {{ $t('pages.use-case-facom.testimony.title') }}
+        </h1>
+        <div class="testimony-body" v-html="testimony_body">
+          {{ $t('pages.use-case-facom.testimony.body') }}
+        </div>
       </div>
-      <div class="testimony-body" v-html="testimony_body">
-        {{ $t('pages.use-case-facom.testimony.body') }}
+      <div class="img-container facom-logo">
+        <img src="@/assets/img/facom-logo.png">
       </div>
-    </div>
-    <NuxtLink
-      class="button button--blue"
-      :to="localePath('/services')"
-    >
-      {{ $t('cta.services') }}
-    </NuxtLink>
-    <div class="img-container facom-logo">
-      <img src="@/assets/img/facom-logo.png">
     </div>
   </div>
 </template>
@@ -58,26 +49,16 @@ export default Vue.extend({
 <style scoped>
 
 #use-cases  {
-  text-align: center;
   margin-bottom: 55px;
 }
 
 .use-case {
   display: inline-grid;
-  text-align: center;
-}
-
-.text-item-body {
-  text-align: justify;
 }
 
 .page-subtitle {
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-.page-subtitle-big {
-  text-transform: uppercase;
 }
 
 .page-subtitle-small {
@@ -90,14 +71,16 @@ export default Vue.extend({
 }
 
 .testimony-title {
-  font-family: MainFont;
-  font-size: 27px;
   margin-bottom: 2rem;
+}
+
+.text-item-body, .testimony-body {
+  text-align: justify;
+  line-height: 1.8;
 }
 
 .testimony-body {
   text-align: justify;
-  background-color: #e3ebf8;
   padding: 25px;
 }
 
@@ -108,6 +91,7 @@ export default Vue.extend({
 
 .facom-logo img {
   width: inherit;
+  max-width: 500px;
 }
 
 @media screen and (max-width: 9000px) {
@@ -122,5 +106,10 @@ export default Vue.extend({
     width: auto;
     padding: 30px 0;
   }
+
+  .text-item-body {
+    text-align: justify;
+  }
+
 }
 </style>

@@ -11,7 +11,7 @@ cname-gen:
 	cp CNAME ./dist/CNAME
 
 commit-push:
-	git add --all  && git commit -m "Regenerated" && git push --force
+	git add --all  && git commit -m "Published website" && git push --force
 
 publish:
 	git push origin `git subtree split --prefix dist main`:gh-pages --force

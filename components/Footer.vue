@@ -2,10 +2,15 @@
   <div id="footer">
     <div id="left-footer-links">
       <ul>
-        <li>
-          DIGIT ALCE<br/>France
+        <li class="title">
+          Digit Alce
+        </li>
+        <li class="subtitle">
+          Paris, France
         </li>
       </ul>
+    </div>
+    <div id="right-footer-links">
       <a
         class="linkedin-logo"
         href="https://www.linkedin.com/company/digit-alce/"
@@ -13,24 +18,14 @@
       >
         <i class="fab fa-linkedin " />
       </a>
-    </div>
-    <div id="right-footer-links">
       <ul>
-        <li>
-          <NuxtLink
-            class="link"
-            :to="localePath('/contact')">{{ $t('path.contact') }}</NuxtLink>
-        </li>
-        <li>
-          <a href="mailto:contact@digitalce.fr">contact@digitalce.fr</a>
-        </li>
-        <li id="copyright-dynamic-date">
+        <li id="copyright">
           <script>
             const currentYear = new Date().getFullYear()
             const copyrightDate = currentYear === 2021
             ? '2021'
             : `2021 - ${currentYear}`
-            const copyright = `© ${copyrightDate} digit alce`
+            const copyright = `© ${copyrightDate} Digit alce`
             document.getElementById("copyright-dynamic-date").innerHTML = copyright
           </script>
         </li>
@@ -46,24 +41,22 @@ export default Vue.extend({})
 
 <style scoped>
 #footer {
-  background: white;
   width:100%;
   font-size: 14px;
   box-shadow: 0px 0px 5px gray;
   padding-top: 19px;
-  color: #2D3F65;
-  background-color: #F1F3F8;
+  background-color: var(--color-grey);
   padding-bottom: 1rem;
+  display: inline-block;
 }
 
 .linkedin-logo {
-  color: #0a66c2;
+  color: var(--color-linkedin);
   font-size: 32px;
 }
 
 a {
   text-decoration: none;
-  color: #2D3F65;
 }
 
 #left-footer-links {
@@ -83,7 +76,10 @@ ul{
 
 li {
   margin: 0 0 20px 0;
-  letter-spacing: 0.9px;
+}
+
+#copyright {
+  font-size: 0.7rem;;
 }
 
 </style>

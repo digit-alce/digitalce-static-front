@@ -6,25 +6,29 @@
         class="imagetext-img"
         :src="image"
       >
-      <a v-if="image && imageClickable" :href="image" target="_blank">
-        <img class="imagetext-img" :src="image">
+      <a v-if="image && imageClickable"
+        class="img-link"
+        :href="image" target="_blank">
+        <img class="imagetext-img clickable" :src="image">
       </a>
-      <div class="imagetext-right-content">
-        <i
-          v-if="icon"
-          class="imagetext-icon"
-          :class="icon"
-        />
-        <div class="imagetext-title">
-          {{ title }}
+      <div class="flex-container">
+        <div class="imagetext-right-content">
+          <i
+            v-if="icon"
+            class="imagetext-icon"
+            :class="icon"
+          />
+          <h4 v-if="title" class="imagetext-title title">
+            {{ title }}
+          </h4>
+          <h4 v-if="subtitle" class="imagetext-subtitle subtitle">
+            {{ subtitle }}
+          </h4>
+          <p v-if="bodyText && !bodyTextBelow" class="imagetext-body" v-html="bodyText" />
         </div>
-        <div class="imagetext-subtitle">
-          {{ subtitle }}
-        </div>
-        <p v-if="!bodyTextBelow" class="imagetext-body" v-html="bodyText" />
       </div>
     </div>
-    <p v-if="bodyTextBelow" class="imagetext-body bottom" v-html="bodyText" />
+    <p v-if="bodyText && bodyTextBelow" class="imagetext-body bottom" v-html="bodyText" />
   </div>
 </template>
 
@@ -46,10 +50,6 @@ export default Vue.extend({
       default: ''
     },
     bodyTextBelow: {
-      type: Boolean,
-      default: false
-    },
-    justifyBody: {
       type: Boolean,
       default: false
     },
@@ -85,11 +85,7 @@ export default Vue.extend({
   computed: {
     cssProps () {
       return {
-        '--title-font-size': this.titleSizePx + 'px',
-        '--subtitle-font-size': this.subtitleSizePx + 'px',
-        '--body-font-size': this.bodySizePx + 'px',
         '--image-width': this.imageWidthPx + 'px',
-        '--body-alignment': this.justifyBody ? 'justify' : 'center'
       }
     }
   }
@@ -99,11 +95,6 @@ export default Vue.extend({
 <style scoped>
 
 .imagetext-top-content {
-  text-align: center;
-  width: 100%;
-}
-
-.imagetext-right-content {
   width: 100%;
 }
 
@@ -112,24 +103,14 @@ export default Vue.extend({
   font-size: 50px;
 }
 
-.imagetext-title {
-  text-transform: uppercase;
-}
-
 .imagetext-subtitle {
-  font-size: var(--subtitle-font-size);
-}
-
-.imagetext-title, .imagetext-subtitle {
-  margin-top: 10px;
-  font-family: MainFont;
+  margin-top: 2rem;
 }
 
 .imagetext-body {
-  font-size: var(--body-font-size);
-  font-family: SecondaryFont;
-  margin-top: 1rem;
-  color: black;
+  margin-top: 2rem;
+  color: var(--color-black);
+  line-height: 1.8;
 }
 
 .imagetext-body.bottom {
@@ -137,26 +118,33 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 9000px) {
-  .imagetext-title {
-    font-size: var(--title-font-size);
-  }
-
-  .imagetext-body {
-    text-align: var(--body-alignment);
-  }
-
   .imagetext-top-content {
     display: flex;
   }
+
   .imagetext-img {
     width: var(--image-width);
-    padding-right: 2rem;
+  }
+
+  .imagetext-img:not(.clickable), .img-link {
+    margin-right: 5rem;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .imagetext-right-content {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   .imagetext-title {
-    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .imagetext-body {
@@ -166,8 +154,19 @@ export default Vue.extend({
   .imagetext-top-content {
     display: block;
   }
+
+  .flex-container {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .imagetext-right-content {
+    width: unset;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
   .imagetext-img {
-    max-width: 500px;
     width: 100%;
     padding-right: 0;
   }

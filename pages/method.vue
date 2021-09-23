@@ -1,8 +1,11 @@
 <template>
-  <div class="page-content">
-    <h1 class="page-title">
+  <div id="main-content">
+    <h2 class="page-title title">
       {{ $t('pages.method.title') }}
-    </h1>
+    </h2>
+    <h4 class="page-subtitle subtitle">
+      {{ $t('pages.method.subtitle') }}
+    </h4>
     <p class="body-text" v-html="body_text" />
     <div id="method-items">
       <ImageTextDisplay
@@ -12,18 +15,9 @@
         :subtitle="item.subtitle"
         :body-text="item.body"
         :image="pictures[index]"
-        :icon="item.icon"
-        body-text-below
-        title-size-px="26"
-        subtitle-size-px="20"
+        class="method-item"
       />
     </div>
-    <NuxtLink
-      class="button button--blue"
-      :to="localePath('/tool')"
-    >
-      {{ $t('cta.innov-scale') }}
-    </NuxtLink>
   </div>
 </template>
 
@@ -49,13 +43,17 @@ export default Vue.extend({
 
 <style scoped>
 
+.method-item {
+  margin-bottom: 40px;
+}
+
 .body-text {
   margin-bottom: 3rem;
+  line-height: 1.8;
 }
 
 #method-items  {
   margin-top: 5rem;
-  text-align: center;
   margin-bottom: 75px;
 }
 

@@ -1,9 +1,7 @@
 <template>
   <div id="wrapper">
     <Nav />
-    <div id="main-content">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <Footer />
   </div>
 </template>
@@ -14,21 +12,48 @@
 <style>
 @font-face {
   font-family: MainFont;
-  src: url(../assets/fonts/Vera-Humana-95.ttf.eot); /* IE9 Compat Modes */
-  src: url(../assets/fonts/Vera-Humana-95.ttf.woff) format('woff'),
-       url(../assets/fonts/Vera-Humana-95.ttf.svg) format('svg');
+  src: url(../assets/fonts/LibreFranklin.ttf);
 }
 @font-face {
   font-family: SecondaryFont;
-  src: url(../assets/fonts/Mate.ttf);
+  src: url(../assets/fonts/Nanum-Regular.ttf);
+}
+
+:root {
+  --color-digitalce-blue: #071be1;
+  --color-digitalce-blue-darker: #0717c0;
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-grey: #efefee;
+  --color-linkedin: #0a66c2;
 }
 
 html, body, #__nuxt, #__layout {
   height: 100%;
+  font-family: MainFont;
+  font-size: 12px;
+  color: var(--color-black);
+  background-color: var(--color-white)
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: SecondaryFont;
-  font-size: 18px;
-  color: #2D3F65;
-  background-color: #F1F3F8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 42.5px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 *{
@@ -38,102 +63,72 @@ html, body, #__nuxt, #__layout {
 img {
   object-fit: cover;
   transform: translateZ(0);
-  /* width: 100%; */
-}
-
-#wrapper {
-  min-height: calc(100vh - 75px);
-  padding-top: 75px;
-  display: flex;
-  flex-direction: column;
 }
 
 #main-content {
   flex: 1;
-  margin: 50px 4vw;
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 6rem;
+}
+
+.max-width {
+  max-width: 1000px;
 }
 
 .page-title, .page-subtitle {
-  text-align: center;
-  font-family: MainFont;
+  text-align: left;
   font-weight: 300;
   margin-bottom: 50px;
 }
 
-.page-title {
-  text-transform: uppercase;
+button {
+  border: 0;
+}
+
+button, .button {
+  cursor: pointer;
 }
 
 .button {
   margin: 0 auto;
-  border-radius: 4px;
   text-decoration: none;
-  padding: 20px 10px;
-  text-transform: uppercase;
+  padding: 1rem;
   text-align: center;
-  width: 220px;
+  width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px !important;
-  font-family: MainFont;
+  font-weight: 400;;
 }
 
 .button--blue {
-  border: 1px solid #526488;
-  background-color: #071BE1;
-  color: #fff;
+  background-color: var(--color-digitalce-blue);
+  color: var(--color-white);
 }
 
 .button--blue:hover {
-  background-color: #fff;
-  color: #35495e;
+  opacity: 0.7;
+  transition: all 300ms ease-out;
 }
 
 .text-item-title {
-  text-transform: uppercase;
-  font-size: 20px;
   margin-bottom: 10px;
   display: inline-block;
   position: relative;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.underline:after {
-  border-bottom: 6px solid #071BE1;
-  opacity: 0.5;
-  content:"";
-  margin: 0 auto;
-  position: absolute;
-  top: 50%; left: 0; right: 0; bottom: 0;
-  z-index: -1;
-}
-
-.text-item-body {
-  padding: 10px 20px;
+.no-border {
+  border: none !important;
 }
 
 @media screen and (max-width: 9000px) {
-  .page-title {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-
-  .page-subtitle-big {
-    font-size: 26px;
-    letter-spacing: 1.5px;
-  }
-
-  .page-subtitle-small {
-    font-size: 24px;
-    letter-spacing: 1.2px;
+  #wrapper {
+    padding-top: 119px;
   }
 
   .column-1 {
@@ -147,27 +142,41 @@ img {
   .column-3 {
     grid-column: 3;
   }
-
-  .body-text {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 900px) {
-  .page-title {
-    font-size: 32px;
-    letter-spacing: -0.2px;
+  html {
+      scrollbar-width: none; /* For Firefox */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
 
-  .page-subtitle-big {
-    font-size: 25px;
-    letter-spacing: 1px;
+  html::-webkit-scrollbar {
+      width: 0px; /* For Chrome, Safari, and Opera */
   }
 
-  .page-subtitle-small {
-    font-size: 20px;
-    letter-spacing: 1px;
+  #wrapper {
+    padding-top: 79px;
   }
+
+
+  .column-1 {
+    grid-column: 1;
+  }
+
+  .column-2 {
+    grid-column: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
 
   .column-1 {
     grid-column: 1;
@@ -180,10 +189,5 @@ img {
   .column-3 {
     grid-column: 1;
   }
-
-  .body-text {
-    text-align: justify;
-  }
 }
-
 </style>
