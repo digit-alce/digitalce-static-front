@@ -56,7 +56,7 @@
         <div class="image-container">
           <img :src="use_case_picture" class="image"/>
         </div>
-        <NuxtLink class="button button--blue" :to="localePath('/use-case')">{{ $t('cta.learn-more') }}</NuxtLink>
+        <NuxtLink class="button button--blue" :to="localePath('/use-case-facom')">{{ $t('cta.learn-more') }}</NuxtLink>
       </div>
 
     </div>
