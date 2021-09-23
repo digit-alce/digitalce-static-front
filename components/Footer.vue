@@ -43,7 +43,7 @@ export default Vue.extend({})
 #footer {
   width:100%;
   font-size: 14px;
-  box-shadow: 0px 0px 5px gray;
+  box-shadow: 0px 0px 3px var(--color-grey);
   padding-top: 19px;
   background-color: var(--color-grey);
   padding-bottom: 1rem;
