@@ -171,7 +171,7 @@ export default {
                       body: 'Use pilot to ensure real-life usage of the new processes and solution. Enable lessons learned to adapt and adjust to real environment.<br/>Create a precise and complete industrialization playbook to prepare and anticipate solution scaling.'
                     },
                     {
-                      title: 'Scalee: Scale the solution',
+                      title: 'Scale: Scale the solution',
                       body: 'Develop a comprehensive change management organization and process to avoid fallbacks and ensure objective completeness of the innovation.<br/>Prepare post-industrialization environment to integrate project into core enterprise processes.'
                     }
                   ]

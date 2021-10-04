@@ -64,31 +64,8 @@ export default Vue.extend({
     icon: {
       type: String,
       default: ''
-    },
-    titleSizePx: {
-      type: String,
-      default: '35'
-    },
-    subtitleSizePx: {
-      type: String,
-      default: '24'
-    },
-    imageWidthPx: {
-      type: String,
-      default: '400'
-    },
-    bodySizePx: {
-      type: String,
-      default: '18'
     }
   },
-  computed: {
-    cssProps () {
-      return {
-        '--image-width': this.imageWidthPx + 'px',
-      }
-    }
-  }
 })
 </script>
 
@@ -122,12 +99,13 @@ export default Vue.extend({
     display: flex;
   }
 
-  .imagetext-img {
-    width: var(--image-width);
-  }
-
   .imagetext-img:not(.clickable), .img-link {
     margin-right: 5rem;
+  }
+
+  .imagetext-img {
+    max-width: 400px;
+    padding-right: 0;
   }
 
   .flex-container {
@@ -167,6 +145,7 @@ export default Vue.extend({
   }
 
   .imagetext-img {
+    max-width: unset;
     width: 100%;
     padding-right: 0;
   }

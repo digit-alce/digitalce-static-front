@@ -13,8 +13,8 @@
           :key="index"
           :title="item.title"
           :body-text="item.body"
+          image-clickable
           :image="pictures[index]"
-          :image-clickable="true"
           class="tool-item"
         />
       </div>
